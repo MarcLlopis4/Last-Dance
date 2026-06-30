@@ -5,7 +5,7 @@ public enum TrackType { Straight, LeftTurn, RightTurn, UpRamp, DownRamp }
 public class ModuleConfig : ScriptableObject
 {
     public GameObject prefab;
-    TrackType trackType;
+    public TrackType trackType;
     [Range(1, 100)] public int spawnWeight = 50;
     public int difficultyRating = 1;
 }

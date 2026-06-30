@@ -5,12 +5,20 @@ public class LevelModule : MonoBehaviour
 {
     [SerializeField] private Transform spawnAnchor;
     [SerializeField] private Transform endAnchor;
+
+    public Transform SpawnAnchor { get => spawnAnchor; set => spawnAnchor = value; }
+    public Transform EndAnchor { get => endAnchor; set => endAnchor = value; }
+
     private bool hasEntered;
     public float ModuleLength { get; private set; }
 
-    private Action<LevelModule> onReturnToPool;
+    public TrackType trackType;
     private float moveSpeed;
     private float despawnZ;
+
+    public Vector3 direction = Vector3.back;
+
+    public ModuleManager mM;
 
     private void Awake()
     {
@@ -18,39 +26,40 @@ public class LevelModule : MonoBehaviour
         ModuleLength = Mathf.Abs(endAnchor.localPosition.z - spawnAnchor.localPosition.z);
     }
 
-    public void Initialize(float speed, float despawnPositionZ, Action<LevelModule> returnAction)
+    public void Initialize(float speed, float despawnPositionZ)
     {
         moveSpeed = speed;
         despawnZ = despawnPositionZ;
-        onReturnToPool = returnAction;
     }
 
     public void UpdateSpeed(float newSpeed) => moveSpeed = newSpeed;
+    public void UpdateDirection(Vector3 newDirection) => direction= newDirection;
 
     private void LateUpdate()
     {
-        transform.Translate(Vector3.back * moveSpeed * Time.deltaTime, Space.Self);
+        transform.Translate(direction * moveSpeed * Time.deltaTime, Space.World);
         if (!hasEntered&& (transform.parent.localPosition - endAnchor.position).magnitude < despawnZ)
         {
             hasEntered = true;
         }
         // Despawn based on the module's actual rear end passing the threshold
-        if (hasEntered&& (transform.parent.localPosition - endAnchor.position).magnitude>despawnZ)
+        if ((hasEntered&& (transform.parent.localPosition - endAnchor.position).magnitude>despawnZ)||((transform.parent.localPosition-endAnchor.position).magnitude>100f))
         {
             transform.parent.GetComponent<ModuleManager>().SpawnNextModule();
+            transform.parent.GetComponent<ModuleManager>().activeModules.Dequeue();
 
             Destroy(gameObject);
         }
     }
 
     // Snaps this module flush against the mathematical end of the last module
-    public void SnapToTargetZ(float targetZ)
+    public void SnapToTargetZ(Vector3 target)
     {
         // Local offset of the mesh/pivot relative to its own spawn anchor
-        float spawnAnchorOffset = transform.localPosition.z - spawnAnchor.localPosition.z;
+        Vector3 spawnAnchorOffset = transform.localPosition - spawnAnchor.localPosition;
 
         Vector3 newPos = transform.localPosition;
-        newPos.z = targetZ + spawnAnchorOffset;
+        newPos = target + spawnAnchorOffset;
         transform.localPosition = newPos;
     }
 }

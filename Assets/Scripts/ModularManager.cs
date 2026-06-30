@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ModuleManager : MonoBehaviour
@@ -12,8 +13,10 @@ public class ModuleManager : MonoBehaviour
     [SerializeField] private float speedMultiplier = 0.05f;
     [SerializeField] private float despawnZPosition = -15f;
 
-    private Queue<LevelModule> activeModules = new Queue<LevelModule>();
-    private Dictionary<GameObject, Queue<LevelModule>> pools = new Dictionary<GameObject, Queue<LevelModule>>();
+    public Queue<LevelModule> activeModules = new Queue<LevelModule>();
+    public Dictionary<GameObject, Queue<LevelModule>> pools = new Dictionary<GameObject, Queue<LevelModule>>();
+
+    private LevelModule lastEnqueued;
 
     // This is the secret sauce. Tracks the absolute Z edge of our track.
     private float trackedTrackEndZ = 0f;
@@ -61,50 +64,67 @@ public class ModuleManager : MonoBehaviour
 
     private LevelModule GetModuleFromPool(GameObject prefab)
     {
-        if (!pools.ContainsKey(prefab)) pools[prefab] = new Queue<LevelModule>();
-
-        if (pools[prefab].Count > 0)
-        {
-            LevelModule pooledModule = pools[prefab].Dequeue();
-            pooledModule.gameObject.SetActive(true);
-            return pooledModule;
-        }
-
         GameObject obj = Instantiate(prefab,this.transform);
+        obj.GetComponent<LevelModule>().mM=this;
         return obj.GetComponent<LevelModule>();
     }
     public void SpawnNextModule()
     {
         ModuleConfig selectedConfig = GetRandomModuleConfig();
         LevelModule module = GetModuleFromPool(selectedConfig.prefab);
+        module.trackType = selectedConfig.trackType;
+        if (lastEnqueued)
+        {
+            if (module.trackType != TrackType.Straight && module.trackType != lastEnqueued.trackType)
+            {
+                module.transform.LookAt(module.transform.position + lastEnqueued.EndAnchor.transform.forward);
+            }
+            else if(module.trackType!=TrackType.Straight&&module.trackType==lastEnqueued.trackType)
+            {
+                selectedConfig=availableModules[0];
+                module=GetModuleFromPool(selectedConfig.prefab);
+                module.trackType=selectedConfig.trackType;
+                module.transform.LookAt(module.transform.position + lastEnqueued.EndAnchor.transform.forward);
+            }
+            else
+            {
+                module.transform.LookAt(module.transform.position + lastEnqueued.EndAnchor.transform.forward);
+            }
+            //else if(module.trackType!=0 && module.trackType==lastEnqueued.trackType)
+            //{
+            //    selectedConfig = GetRandomModuleConfig();
+            //    module=GetModuleFromPool(selectedConfig.prefab);
+            //    module.trackType = selectedConfig.trackType;
+            //    if (module.trackType == lastEnqueued.trackType)
+            //    {
+            //        selectedConfig = GetRandomModuleConfig();
+            //        module = GetModuleFromPool(selectedConfig.prefab);
+            //        module.trackType = selectedConfig.trackType;
+            //    }
+            //    else
+            //    {
+            //        module = Instantiate(availableModules.ElementAt(0).prefab).GetComponent<LevelModule>();
+            //        module.trackType = 0;
+            //    }
+            //}
+        }
+        else
+        {
 
-        module.Initialize(gameSpeed, despawnZPosition, RecycleModule);
+        }
+            module.Initialize(gameSpeed, despawnZPosition);
+        
 
         // Snap directly to our mathematically flawless tracking float
-        module.SnapToTargetZ(trackedTrackEndZ);
+        module.SnapToTargetZ(lastEnqueued?.EndAnchor.transform.position??Vector3.zero);
 
         // Advance our tracking float by the exact length of the new module
         trackedTrackEndZ += module.ModuleLength;
 
         activeModules.Enqueue(module);
+        lastEnqueued = module;
     }
 
-    // ... Keep your GetRandomModuleConfig() and GetModuleFromPool() identical ...
 
-    private void RecycleModule(LevelModule module)
-    {
-        activeModules.Dequeue();
-        module.gameObject.SetActive(false);
-
-        string cleanName = module.gameObject.name.Replace("(Clone)", "").Trim();
-        GameObject matchingPrefab = availableModules.Find(m => m.prefab.name == cleanName)?.prefab;
-        module.transform.localPosition = Vector3.zero;
-
-        if (matchingPrefab != null) pools[matchingPrefab].Enqueue(module);
-        else Destroy(module.gameObject);
-
-        // No more UpdateNextSpawnPoint() calculation needed! 
-        // The Update loop continuously shifts trackedTrackEndZ perfectly.
-        SpawnNextModule();
-    }
+    
 }
