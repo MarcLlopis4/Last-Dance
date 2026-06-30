@@ -3,14 +3,20 @@ using System;
 
 public class LevelModule : MonoBehaviour
 {
-    [SerializeField] private Transform endAnchor;
     [SerializeField] private Transform spawnAnchor;
-
-    public Transform EndAnchor => endAnchor;
+    [SerializeField] private Transform endAnchor;
+    private bool hasEntered;
+    public float ModuleLength { get; private set; }
 
     private Action<LevelModule> onReturnToPool;
     private float moveSpeed;
     private float despawnZ;
+
+    private void Awake()
+    {
+        // Calculate the exact distance between your front and back anchors on the Z axis
+        ModuleLength = Mathf.Abs(endAnchor.localPosition.z - spawnAnchor.localPosition.z);
+    }
 
     public void Initialize(float speed, float despawnPositionZ, Action<LevelModule> returnAction)
     {
@@ -23,20 +29,28 @@ public class LevelModule : MonoBehaviour
 
     private void LateUpdate()
     {
-        // Move towards the screen (assuming movement along the Z-axis)
-        transform.Translate(Vector3.back * moveSpeed * Time.deltaTime, Space.World);
-
-        // Despawn once completely past the despawn threshold
-        if (endAnchor.position.z < despawnZ)
+        transform.Translate(Vector3.back * moveSpeed * Time.deltaTime, Space.Self);
+        if (!hasEntered&& (transform.parent.localPosition - endAnchor.position).magnitude < despawnZ)
         {
-            onReturnToPool?.Invoke(this);
+            hasEntered = true;
+        }
+        // Despawn based on the module's actual rear end passing the threshold
+        if (hasEntered&& (transform.parent.localPosition - endAnchor.position).magnitude>despawnZ)
+        {
+            transform.parent.GetComponent<ModuleManager>().SpawnNextModule();
+
+            Destroy(gameObject);
         }
     }
 
-    // Position this module flush against the previous module's end anchor
-    public void SnapToAnchor(Vector3 targetPosition)
+    // Snaps this module flush against the mathematical end of the last module
+    public void SnapToTargetZ(float targetZ)
     {
-        Vector3 offset = transform.position - spawnAnchor.position;
-        transform.position = targetPosition + offset;
+        // Local offset of the mesh/pivot relative to its own spawn anchor
+        float spawnAnchorOffset = transform.localPosition.z - spawnAnchor.localPosition.z;
+
+        Vector3 newPos = transform.localPosition;
+        newPos.z = targetZ + spawnAnchorOffset;
+        transform.localPosition = newPos;
     }
 }

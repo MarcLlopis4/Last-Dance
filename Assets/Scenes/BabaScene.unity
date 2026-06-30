@@ -384,11 +384,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   availableModules:
   - {fileID: 11400000, guid: bd60ecce9338dc247a7860dbd6a8f212, type: 2}
-  initialModulesOnScreen: 5
+  initialModulesOnScreen: 10
   gameSpeed: 10
   speedMultiplier: 0.05
-  despawnZPosition: -15
-  spawnOrigin: {x: 0, y: 0, z: 0}
+  despawnZPosition: 10
 --- !u!1 &1979583613
 GameObject:
   m_ObjectHideFlags: 0
