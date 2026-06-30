@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c3ca7ca068f3f4d93fbd3a909680d8, type: 3}
+  m_Name: Test_Default
+  m_EditorClassIdentifier: Assembly-CSharp::ModuleConfig
+  prefab: {fileID: 5237328487235621296, guid: 0de63aa5490a6b142aadc96ccf9a8cff, type: 3}
+  spawnWeight: 50
+  difficultyRating: 1
