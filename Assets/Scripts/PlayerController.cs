@@ -10,8 +10,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float SideVelocity;
     [SerializeField] private float jumpForce;
+    [SerializeField] private Egg egg;
+    [SerializeField] public GameObject eggInitialPos;
+        
 
     bool canJump =true;
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,9 +45,34 @@ public class PlayerController : MonoBehaviour
                 if (canJump)
                 {
                     canJump = false;
+                    if (egg.canPush == true)
+                    {
+                        egg.transform.parent = this.gameObject.transform;
+                    }
+                  
                     rigidbody.AddForce(0, jumpForce, 0, ForceMode.Force);
                 }
                 
+
+                return;
+
+
+
+        }
+    }
+
+    public void EggPush(InputAction.CallbackContext context)
+    {
+        switch (context.phase)
+        {
+            case InputActionPhase.Started:
+
+                if (egg.canPush == true)
+                {
+                    Debug.Log("pushedEgg");
+                    egg.PushUp(eggInitialPos.transform.position);
+                }
+
 
                 return;
 
@@ -60,6 +89,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log(Vector3.Angle(surfaceNormal, Vector3.up));
             canJump = true;
+            egg.transform.parent = null;
         }
     }
 }
