@@ -17,7 +17,8 @@ public class CameraControll : MonoBehaviour
     void LateUpdate()
     {
        
-        Vector3 target = new Vector3(Egg.transform.position.x + xoffset, transform.position.y, transform.position.z);
+        Vector3 target = new Vector3(Egg.transform.position.x + xoffset, transform.position.y, Egg.transform.position.z -4
+            );
         transform.position = Vector3.SmoothDamp(transform.position, target, ref velocity, smoothTime);
     }
 }
