@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     {
          playerInput = GetComponent<PlayerInput>();
          rigidbody = GetComponent<Rigidbody>();
+        //Vector3 initialPos = eggInitialPos.transform.position;
+       // egg.transform.position = initialPos;
     }
 
     // Update is called once per frame
@@ -48,7 +50,9 @@ public class PlayerController : MonoBehaviour
                     if (egg.canPush == true)
                     {
                         egg.transform.parent = this.gameObject.transform;
+                        egg.setinitialPosY = true;
                     }
+                    egg.StopJiggling();
                   
                     rigidbody.AddForce(0, jumpForce, 0, ForceMode.Force);
                 }
@@ -85,10 +89,11 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 surfaceNormal = collision.GetContact(0).normal;
 
-        if (Vector3.Angle(surfaceNormal, Vector3.up) < 90)
+        if (Vector3.Angle(surfaceNormal, Vector3.up) == 0)
         {
             Debug.Log(Vector3.Angle(surfaceNormal, Vector3.up));
             canJump = true;
+            egg.setinitialPosY = true;
             egg.transform.parent = null;
         }
     }
