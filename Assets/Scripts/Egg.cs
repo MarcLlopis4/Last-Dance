@@ -7,11 +7,13 @@ using UnityEngine.UIElements;
 public class Egg : MonoBehaviour
 {
     private Rigidbody rb;
+    private CapsuleCollider coll;
     [SerializeField] private float EggForce;
     public GameObject dino;
 
     [SerializeField] private CameraControll camera;
     [SerializeField] private ModuleManager moduleManager;
+    [SerializeField] private UIManager uiManager;
 
     public bool canPush;
     public float zOffset;
@@ -75,7 +77,7 @@ public class Egg : MonoBehaviour
         transform.parent = null;
         rb.isKinematic = false;
         rb.linearVelocity = Vector3.zero;
-        rb.AddRelativeForce(0, -EggForce, 0, ForceMode.Impulse);
+        rb.AddRelativeForce(0, EggForce, 0, ForceMode.Impulse);
         timeToRotate = .1f;
         rb.useGravity = true;
         yield return new WaitForSeconds(0.2f);
@@ -106,11 +108,21 @@ public class Egg : MonoBehaviour
     {
         if (collision.gameObject.tag != "Player")
         {
-            eggHit = true;
-            canPush = false;
-            rb.useGravity = true;
-           StopAllCoroutines();
-            Invoke("TimeScaleWithDelay", 1);
+            if (eggHit == false)
+            {
+                rb.constraints = RigidbodyConstraints.None;
+                eggHit = true;
+                canPush = false;
+                rb.useGravity = true;
+                moduleManager.gameSpeed = 0;
+                moduleManager.speedMultiplier = 0;
+                dino.GetComponent<PlayerController>().UnsetPlayerInput();
+                StopAllCoroutines();
+                //Invoke("TimeScaleWithDelay", 1);
+
+                uiManager.DeathPanelActivation();
+            }
+            
             //Vector3 tempPos = collision.gameObject.GetComponent<PlayerController>().eggInitialPos.transform.localPosition;
 
             //transform.localPosition = tempPos;
@@ -122,13 +134,14 @@ public class Egg : MonoBehaviour
 
     private void TimeScaleWithDelay()
     {
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
     }
 
     private IEnumerator EggRotates()
     {
         float originzRot = transform.localEulerAngles.z;
         float duration = 0;
+        float speed = 100;
        
 
         float startPos = originzRot;
@@ -139,20 +152,29 @@ public class Egg : MonoBehaviour
             while (duration<timeToRotate)
             {
 
-                transform.localEulerAngles = Vector3.Lerp(new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, startPos), 
-                    new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, originzRot + rotationoffset), duration / timeToRotate);
-                duration += Time.deltaTime;
+               
+               
+                float zAngle = Mathf.LerpAngle(startPos, originzRot + rotationoffset, duration / timeToRotate);
+                transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, zAngle);
+
+              Debug.Log("siuuuuuu");
+              
                
                 yield return null;
+                duration += Time.deltaTime;
             }
             duration = 0;
             startPos = transform.localEulerAngles.z;
 
             while (duration < timeToRotate)
             {
-                transform.localEulerAngles = Vector3.Lerp(new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, startPos),
-                    new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, originzRot + -rotationoffset), duration / timeToRotate);
+                float zAngle = Mathf.LerpAngle(startPos, originzRot + -rotationoffset, duration / timeToRotate);
+                transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, zAngle);
+
                 duration += Time.deltaTime;
+
+                
+
 
                 yield return null;
             }
@@ -164,7 +186,7 @@ public class Egg : MonoBehaviour
         }
        
 
-        yield return null;
+       
     }
     private IEnumerator EggJiggleMove()
     {
@@ -209,7 +231,7 @@ public class Egg : MonoBehaviour
         }
 
 
-        yield return null;
+        
     }
 
 
