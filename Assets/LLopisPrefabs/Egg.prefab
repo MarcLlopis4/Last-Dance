@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7434498912674426388}
   - component: {fileID: 6334713977160466632}
   - component: {fileID: 2908848726781188496}
-  - component: {fileID: 4985574349363107162}
   - component: {fileID: 7306578571182375962}
   - component: {fileID: 7292131294505598911}
+  - component: {fileID: 3396675210191504168}
   m_Layer: 0
   m_Name: Egg
   m_TagString: Untagged
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7432239356205379649}
-  m_Mesh: {fileID: 4068373912626513877, guid: 5f44be2acbd308a4fb3491764a8dda79, type: 3}
+  m_Mesh: {fileID: -858773454026450171, guid: 873aaba686adc9945a92e55d9a5c677e, type: 3}
 --- !u!23 &2908848726781188496
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 5f44be2acbd308a4fb3491764a8dda79, type: 3}
+  - {fileID: 2100000, guid: e1a36775155a4cd4280c7bc1380fd3e7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,29 +93,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &4985574349363107162
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7432239356205379649}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.29
-  m_Height: 0.93914175
-  m_Direction: 1
-  m_Center: {x: -4.48697e-23, y: -0.052972794, z: -0.000000029802322}
 --- !u!54 &7306578571182375962
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -155,11 +132,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6a4bbf1aa63634683e2ec86b77721a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Egg
-  EggForce: 5
+  EggForce: 7
   dino: {fileID: 0}
   camera: {fileID: 0}
+  moduleManager: {fileID: 0}
+  uiManager: {fileID: 0}
   canPush: 1
-  zOffset: -1
+  zOffset: -0.1
   egginitialPos: {fileID: 0}
   setinitialPosY: 0
-  rotationoffset: 40
+  rotationoffset: 30
+--- !u!64 &3396675210191504168
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7432239356205379649}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -858773454026450171, guid: 873aaba686adc9945a92e55d9a5c677e, type: 3}

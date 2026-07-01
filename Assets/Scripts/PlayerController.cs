@@ -29,14 +29,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 Movement = playerInput.actions["Move"].ReadValue<Vector2>();
-        float ValueX = Movement.x;
+        if(playerInput != null)
+        {
+            Vector2 Movement = playerInput.actions["Move"].ReadValue<Vector2>();
+            float ValueX = Movement.x;
 
-        rigidbody.AddRelativeForce(ValueX * SideVelocity ,0,0, ForceMode.Force);
+            rigidbody.AddRelativeForce(ValueX * SideVelocity, 0, 0, ForceMode.Force);
+        }
+        
 
 
 
 
+    }
+
+    public void UnsetPlayerInput()
+    {
+        playerInput = null;
     }
 
     public void Jump(InputAction.CallbackContext context)
