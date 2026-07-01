@@ -9,8 +9,8 @@ public class ModuleManager : MonoBehaviour
     [SerializeField] private int initialModulesOnScreen = 5;
 
     [Header("Movement & Flow")]
-    [SerializeField] private float gameSpeed = 10f;
-    [SerializeField] private float speedMultiplier = 0.05f;
+    public float gameSpeed = 10f;
+    public float speedMultiplier = 0.05f;
     [SerializeField] private float despawnZPosition = -15f;
 
     public Queue<LevelModule> activeModules = new Queue<LevelModule>();
