@@ -13,7 +13,7 @@ public class ModuleManager : MonoBehaviour
     [SerializeField] private float gameSpeed = 10f;
     [SerializeField] private float speedMultiplier = 0.05f;
     [SerializeField] private float despawnWorldZ = -15f;
-    [SerializeField] private Vector3 moveAxis = Vector3.back; // fixed world-space TRACK translation axis — never changes
+    [SerializeField] private Vector3 moveAxis = Vector3.back; // fixed world-space TRACK translation axis ï¿½ never changes
     [SerializeField] private float turnDuration = 0.35f;      // seconds to ease a corner pivot
 
     public Queue<LevelModule> activeModules = new Queue<LevelModule>();
@@ -24,7 +24,7 @@ public class ModuleManager : MonoBehaviour
     private TrackType lastCurve = TrackType.Straight;
     private bool isTurning = false;
 
-    // The direction the PLAYER is conceptually heading — always opposite the track's translation axis,
+    // The direction the PLAYER is conceptually heading ï¿½ always opposite the track's translation axis,
     // since the player is stationary and the track scrolls toward them.
     private Vector3 TravelDirection => -moveAxis;
 
@@ -40,7 +40,7 @@ public class ModuleManager : MonoBehaviour
     {
         gameSpeed += speedMultiplier * Time.deltaTime;
 
-        // Freeze translation while a corner pivot is easing in — see StopRotation/EaseRotation.
+        // Freeze translation while a corner pivot is easing in ï¿½ see StopRotation/EaseRotation.
         if (!isTurning)
         {
             transform.position += moveAxis * gameSpeed * Time.deltaTime;

@@ -200,11 +200,14 @@
     "m_DisplayName": "Emisiive",
     "m_SlotType": 1,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "Out",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
-    "m_Labels": []
+    "m_Labels": [],
+    "m_LiteralMode": false
 }
 
 {
@@ -214,6 +217,9 @@
     "m_Guid": {
         "m_GuidSerialized": "61c83ad1-0c9d-44e4-bf8d-a712586cd016"
     },
+    "promotedFromAssetID": "",
+    "promotedFromCategoryName": "",
+    "promotedOrdering": -1,
     "m_Name": "Color",
     "m_DefaultRefNameVersion": 1,
     "m_RefNameGeneratedByDisplayName": "Color",
@@ -226,7 +232,10 @@
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
+    "hideConnector": false,
     "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
     "m_Value": {
         "r": 0.0,
         "g": 0.0,
@@ -245,11 +254,14 @@
     "m_DisplayName": "CircleRadius",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "_CircleRadius",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": 0.6299999952316284,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
+    "m_DefaultValue": 0.6299999952316284,
+    "m_Labels": [],
+    "m_LiteralMode": false
 }
 
 {
@@ -259,7 +271,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "SSG_SmoothStepCircle",
+    "m_Name": "SSG_Smooth Step Circle",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -347,7 +359,7 @@
     },
     "m_Slots": [
         {
-            "m_Id": "7008460414604f76bc8ecd54e4ee28bf"
+            "m_Id": "8ef66e06d26a499e94ab2d81f7d4e659"
         },
         {
             "m_Id": "5a981f152fb247a2b8d6c1c76709f1aa"
@@ -400,8 +412,10 @@
     "m_DisplayName": "Position",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "Position",
     "m_StageCapability": 1,
+    "m_CustomBinding": "",
     "m_Value": {
         "x": 0.0,
         "y": 0.0,
@@ -459,6 +473,9 @@
     "m_Guid": {
         "m_GuidSerialized": "0cd5f60e-2560-44da-a566-7b8e6eff1f3e"
     },
+    "promotedFromAssetID": "",
+    "promotedFromCategoryName": "",
+    "promotedOrdering": -1,
     "m_Name": "Emisiive",
     "m_DefaultRefNameVersion": 1,
     "m_RefNameGeneratedByDisplayName": "Emisiive",
@@ -471,13 +488,27 @@
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
+    "hideConnector": false,
     "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
     "m_Value": 0.0,
     "m_FloatType": 0,
+    "m_LiteralFloatMode": false,
     "m_RangeValues": {
         "x": 0.0,
         "y": 1.0
-    }
+    },
+    "m_SliderType": 0,
+    "m_SliderPower": 3.0,
+    "m_EnumType": 0,
+    "m_CSharpEnumString": "",
+    "m_EnumNames": [
+        "Default"
+    ],
+    "m_EnumValues": [
+        0
+    ]
 }
 
 {
@@ -522,11 +553,14 @@
     "m_DisplayName": "Cicle2Radius",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "_Cicle2Radius",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": 0.5,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
+    "m_DefaultValue": 0.5,
+    "m_Labels": [],
+    "m_LiteralMode": false
 }
 
 {
@@ -537,8 +571,10 @@
     "m_DisplayName": "Color",
     "m_SlotType": 1,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "Color",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": {
         "x": 0.0,
         "y": 0.0,
@@ -562,11 +598,14 @@
     "m_DisplayName": "Emissive",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "_Emissive",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": 1.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
+    "m_DefaultValue": 1.0,
+    "m_Labels": [],
+    "m_LiteralMode": false
 }
 
 {
@@ -577,8 +616,10 @@
     "m_DisplayName": "Tiling",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "_Tiling",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": {
         "x": 1.0,
         "y": 1.0
@@ -592,42 +633,20 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
-    "m_ObjectId": "7008460414604f76bc8ecd54e4ee28bf",
-    "m_Id": -1618196286,
-    "m_DisplayName": "Color",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_Color",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "7e93d67f21e8425d91f38d5167374f64",
     "m_Id": 0,
     "m_DisplayName": "Alpha",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "Alpha",
     "m_StageCapability": 2,
+    "m_CustomBinding": "",
     "m_Value": 1.0,
     "m_DefaultValue": 1.0,
-    "m_Labels": []
+    "m_Labels": [],
+    "m_LiteralMode": false
 }
 
 {
@@ -638,8 +657,10 @@
     "m_DisplayName": "Color",
     "m_SlotType": 1,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "Out",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": {
         "x": 0.0,
         "y": 0.0,
@@ -691,6 +712,33 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.ColorRGBAMaterialSlot",
+    "m_ObjectId": "8ef66e06d26a499e94ab2d81f7d4e659",
+    "m_Id": -1618196286,
+    "m_DisplayName": "Color",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_HideConnector": false,
+    "m_ShaderOutputName": "_Color",
+    "m_StageCapability": 3,
+    "m_CustomBinding": "",
+    "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "989fc16dee2941d0aee18b9ea17a2c60",
     "m_Group": {
@@ -738,8 +786,12 @@
     "m_AlphaMode": 0,
     "m_RenderFace": 2,
     "m_AlphaClip": false,
-    "m_CastShadows": true,
+    "m_CastShadows": false,
     "m_ReceiveShadows": true,
+    "m_DisableTint": false,
+    "m_Sort3DAs2DCompatible": false,
+    "m_AdditionalMotionVectorMode": 0,
+    "m_AlembicMotionVectors": false,
     "m_SupportsLODCrossFade": false,
     "m_CustomEditorGUI": "",
     "m_SupportVFX": true
@@ -753,8 +805,10 @@
     "m_DisplayName": "Base Color",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "BaseColor",
     "m_StageCapability": 2,
+    "m_CustomBinding": "",
     "m_Value": {
         "x": 0.5,
         "y": 0.5,
@@ -819,11 +873,14 @@
     "m_DisplayName": "SmoothRadius",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "_SmoothRadius",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": 1.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
+    "m_DefaultValue": 1.0,
+    "m_Labels": [],
+    "m_LiteralMode": false
 }
 
 {
@@ -834,11 +891,14 @@
     "m_DisplayName": "SmoothStepCircle",
     "m_SlotType": 1,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "SmoothStepCircle",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
-    "m_Labels": []
+    "m_Labels": [],
+    "m_LiteralMode": false
 }
 
 {
@@ -849,11 +909,14 @@
     "m_DisplayName": "Circle2Smoth",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "_Circle2Smoth",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": 0.9399999976158142,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
+    "m_DefaultValue": 0.9399999976158142,
+    "m_Labels": [],
+    "m_LiteralMode": false
 }
 
 {
@@ -864,8 +927,10 @@
     "m_DisplayName": "Normal",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "Normal",
     "m_StageCapability": 1,
+    "m_CustomBinding": "",
     "m_Value": {
         "x": 0.0,
         "y": 0.0,
@@ -917,7 +982,10 @@
 {
     "m_SGVersion": 2,
     "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalUnlitSubTarget",
-    "m_ObjectId": "daf083995b374cdf82233ff5f54da097"
+    "m_ObjectId": "daf083995b374cdf82233ff5f54da097",
+    "m_KeepLightingVariants": false,
+    "m_DefaultDecalBlending": true,
+    "m_DefaultSSAO": true
 }
 
 {
@@ -928,8 +996,10 @@
     "m_DisplayName": "Tangent",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "Tangent",
     "m_StageCapability": 1,
+    "m_CustomBinding": "",
     "m_Value": {
         "x": 0.0,
         "y": 0.0,
@@ -952,8 +1022,10 @@
     "m_DisplayName": "Displacement",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "_Displacement",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": {
         "x": -0.5,
         "y": -0.5
@@ -973,8 +1045,10 @@
     "m_DisplayName": "Circle || SubtractCircle",
     "m_SlotType": 0,
     "m_Hidden": false,
+    "m_HideConnector": false,
     "m_ShaderOutputName": "_Circle_SubtractCircle",
     "m_StageCapability": 3,
+    "m_CustomBinding": "",
     "m_Value": false,
     "m_DefaultValue": false
 }
