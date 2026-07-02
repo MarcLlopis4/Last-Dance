@@ -151,9 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelModule
   spawnAnchor: {fileID: 2805813788717029620}
   endAnchor: {fileID: 5363281500751350623}
-  rotating: 0
   trackType: 1
-  direction: {x: 0, y: 0, z: -1}
   mM: {fileID: 0}
 --- !u!65 &8209426704423067629
 BoxCollider:
@@ -175,7 +173,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 6, y: 5, z: 1}
-  m_Center: {x: -1, y: 0, z: 4.5}
+  m_Center: {x: -1, y: 0, z: 5}
 --- !u!54 &1317785296963416965
 Rigidbody:
   m_ObjectHideFlags: 0
