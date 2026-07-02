@@ -387,9 +387,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1b35ee67e0e29ca45a9d2ace1b2ce806, type: 2}
   - {fileID: 11400000, guid: 23c0d594417103749b461a4b2d7ca6e7, type: 2}
   initialModulesOnScreen: 15
-  gameSpeed: 10
+  gameSpeed: 15
   speedMultiplier: 0.05
   despawnZPosition: 15
+  globalDirection: {x: 0, y: 0, z: -1}
+  lastCurve: 0
 --- !u!1 &1979583613
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +406,7 @@ GameObject:
   - component: {fileID: 1979583614}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
