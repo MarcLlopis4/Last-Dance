@@ -10,8 +10,8 @@ public class ModuleManager : MonoBehaviour
     [SerializeField] private int initialModulesOnScreen = 5;
 
     [Header("Movement & Flow")]
-    [SerializeField] private float gameSpeed = 10f;
-    [SerializeField] private float speedMultiplier = 0.05f;
+    public float gameSpeed = 10f;
+    public float speedMultiplier = 0.05f;
     [SerializeField] private float despawnWorldZ = -15f;
     [SerializeField] private Vector3 moveAxis = Vector3.back; // fixed world-space TRACK translation axis � never changes
     [SerializeField] private float turnDuration = 0.35f;      // seconds to ease a corner pivot
