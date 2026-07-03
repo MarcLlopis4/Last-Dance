@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -9,11 +10,13 @@ public class UIManager : MonoBehaviour
     [Header("Panels")]
     [SerializeField] private GameObject deathPanel;
     [SerializeField] private AnimationCurve deathPanelCurve;
+
+    private PlayableDirector dir;
     
 
     void Start()
     {
-        
+       
     }
 
      

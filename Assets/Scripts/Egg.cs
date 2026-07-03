@@ -92,8 +92,8 @@ public class Egg : MonoBehaviour
             Debug.Log(localInitialPos.y);
             yield return null;
        }
-        transform.position = egginitialPos.transform.position;
         transform.parent = dino.transform;
+        transform.position = egginitialPos.transform.position;
         rb.isKinematic = true;
         timeToRotate = .7f;
         Debug.Log("posicion igual");
