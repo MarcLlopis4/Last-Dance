@@ -387,10 +387,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1b35ee67e0e29ca45a9d2ace1b2ce806, type: 2}
   - {fileID: 11400000, guid: 23c0d594417103749b461a4b2d7ca6e7, type: 2}
   initialModulesOnScreen: 15
-  gameSpeed: 5
+  gameSpeed: 15
   speedMultiplier: 0.05
   despawnZPosition: 15
   globalDirection: {x: 0, y: 0, z: -1}
+  globalDirectionRef: {x: 0, y: 0, z: 0}
+  lastCurve: 0
 --- !u!1 &1979583613
 GameObject:
   m_ObjectHideFlags: 0

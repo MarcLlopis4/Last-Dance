@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
                         egg.transform.parent = this.gameObject.transform;
                         egg.setinitialPosY = true;
                     }
-                    egg.StopJiggling();
+                    //egg.StopJiggling();
                   
                     rigidbody.AddForce(0, jumpForce, 0, ForceMode.Force);
                 }
