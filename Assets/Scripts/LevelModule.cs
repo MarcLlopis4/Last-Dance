@@ -10,7 +10,6 @@ public class LevelModule : MonoBehaviour
 
     public TrackType trackType;
     public ModuleManager mM;
-    
 
     private float despawnWorldZ;
     private bool hasTriggered;
@@ -32,30 +31,6 @@ public class LevelModule : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            //Debug.Log("Player entered module: " + gameObject.name);
-            mM.StopRotation(this);
-        }
-    }
-    
-    public void StartRotation()
-    {
-        StartCoroutine(RotateModule());
-    }
-
-    IEnumerator RotateModule()
-    {
-        yield return null;
-        rotating = false;
-    }
     private void LateUpdate()
     {
         if (endAnchor.position.z < despawnWorldZ)
@@ -68,6 +43,4 @@ public class LevelModule : MonoBehaviour
             }
         }
     }
-
-    
 }
