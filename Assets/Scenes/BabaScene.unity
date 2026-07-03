@@ -429,10 +429,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   availableModules:
   - {fileID: 11400000, guid: bd60ecce9338dc247a7860dbd6a8f212, type: 2}
-  - {fileID: 11400000, guid: 1b35ee67e0e29ca45a9d2ace1b2ce806, type: 2}
+  - {fileID: 11400000, guid: e9359f6062b67ad4ab64a1a0d5d3635c, type: 2}
+  - {fileID: 11400000, guid: a7ef64e288eeff94a88fc2a4977903f0, type: 2}
+  - {fileID: 11400000, guid: c535f1032a0ab10469c1355f7eb17b9a, type: 2}
+  - {fileID: 11400000, guid: 9c18fd103efbf3e4f954bddfca9ff1cc, type: 2}
+  - {fileID: 11400000, guid: dc77561b4cfe45f41bf1afaf0a489fa7, type: 2}
+  - {fileID: 11400000, guid: b6e2ac7e9b0605a428219c15c8ed6c12, type: 2}
+  - {fileID: 11400000, guid: 5642aadaa3b2c5b48b7411491c77d4a3, type: 2}
+  - {fileID: 11400000, guid: a7faf5eede4c4eb4ebb37be6757b8484, type: 2}
+  - {fileID: 11400000, guid: 78d6abc9665781a49919aab769d439cf, type: 2}
+  - {fileID: 11400000, guid: d057993b7ce27864ba0e80e4a908c9d8, type: 2}
+  - {fileID: 11400000, guid: 2af608414009461459a505f7b3d12256, type: 2}
   - {fileID: 11400000, guid: 23c0d594417103749b461a4b2d7ca6e7, type: 2}
+  - {fileID: 11400000, guid: e61b4abb8c31e724fb6e579c1007d663, type: 2}
+  - {fileID: 11400000, guid: 6fde1c95aa059c1439bc7b299949683c, type: 2}
+  - {fileID: 11400000, guid: d6efe9368cbb1b24ca1a04eb3bf1ea74, type: 2}
+  - {fileID: 11400000, guid: de2e1dfba286ebf4cb24d74e24c45f18, type: 2}
+  - {fileID: 11400000, guid: f1e79f0159407ad478c439aabe9a3d16, type: 2}
+  - {fileID: 11400000, guid: c995898c2c707be42ad623019233d1f6, type: 2}
+  - {fileID: 11400000, guid: 192fb51009c5c5844b33905bea6624fb, type: 2}
+  - {fileID: 11400000, guid: 1b35ee67e0e29ca45a9d2ace1b2ce806, type: 2}
+  - {fileID: 11400000, guid: ac0d86e019acbc847ae6f067b417bbaa, type: 2}
+  - {fileID: 11400000, guid: 31f19d309af50504796d671be1acefb4, type: 2}
+  - {fileID: 11400000, guid: ccc69a200c0a04d4ab27b53a393d3cb9, type: 2}
+  - {fileID: 11400000, guid: 83cf406d235e25d47b27311a0cb74428, type: 2}
+  - {fileID: 11400000, guid: 89de11d196018f344919f9e757a351ed, type: 2}
+  - {fileID: 11400000, guid: 8d5eafb74373658468efded7f761ed5b, type: 2}
+  - {fileID: 11400000, guid: c583d2860ef5f9243902c8f605ea032c, type: 2}
   initialModulesOnScreen: 15
-  gameSpeed: 15
+  gameSpeed: 5
   speedMultiplier: 0.05
   despawnWorldZ: -15
   moveAxis: {x: 0, y: 0, z: -1}
