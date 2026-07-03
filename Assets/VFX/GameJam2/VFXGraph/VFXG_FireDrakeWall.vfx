@@ -6509,17 +6509,17 @@ MonoBehaviour:
   needsOwnSort: 0
   needsOwnAabbBuffer: 0
   m_Topology:
-    rid: 1000
+    rid: 1238900068092739656
   m_Shading:
-    rid: 1001
+    rid: 1238900068092739657
   references:
     version: 2
     RefIds:
-    - rid: 1000
+    - rid: 1238900068092739656
       type: {class: ParticleTopologyPlanarPrimitive, ns: UnityEditor.VFX, asm: Unity.VisualEffectGraph.Editor}
       data:
         primitiveType: 1
-    - rid: 1001
+    - rid: 1238900068092739657
       type: {class: ParticleShadingShaderGraph, ns: UnityEditor.VFX, asm: Unity.VisualEffectGraph.Editor}
       data:
         shaderGraph: {fileID: 4333940904281232215, guid: 54d77644b85438848bd32d2928af89d2, type: 3}
