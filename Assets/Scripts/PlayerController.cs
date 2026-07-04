@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public GameObject eggInitialPos;
     [SerializeField] public GameObject camClosePos;
     [SerializeField] public CameraControll cam;
+    [SerializeField] public ModuleManager mM;
         
 
     bool canJump =true;
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
         {
             Vector2 Movement = playerInput.actions["Move"].ReadValue<Vector2>();
             float ValueX = Movement.x;
+            //float ValueY = Movement.y;
 
             Debug.Log("ValueX" + ValueX);
             rigidbody.AddRelativeForce(ValueX * SideVelocity, 0, 0, ForceMode.Force);
@@ -54,6 +56,27 @@ public class PlayerController : MonoBehaviour
     public void UnsetPlayerInput()
     {
         playerInput = null;
+    }
+    public void Brake(InputAction.CallbackContext context)
+    {
+        switch (context.phase)
+        {
+            case InputActionPhase.Started:
+
+                mM.braking = true;
+
+                return;
+
+            case InputActionPhase.Canceled:
+
+
+                mM.braking = false;
+                    
+                return;
+
+
+
+        }
     }
 
     public void Jump(InputAction.CallbackContext context)
@@ -71,7 +94,7 @@ public class PlayerController : MonoBehaviour
                     }
                     //egg.StopJiggling();
                   
-                    rigidbody.AddForce(0, jumpForce, 0, ForceMode.Force);
+                    rigidbody.AddForce(0, jumpForce, 0, ForceMode.VelocityChange);
                 }
                 
 

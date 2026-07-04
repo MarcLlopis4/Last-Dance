@@ -6,8 +6,9 @@ using UnityEngine.UIElements;
 
 public class Egg : MonoBehaviour
 {
-    private Rigidbody rb;
+    [SerializeField] private Rigidbody rb;
     private CapsuleCollider coll;
+    [SerializeField] private Animator animator;
     [SerializeField] private float EggForce;
     public GameObject dino;
 
@@ -29,17 +30,17 @@ public class Egg : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        
         canPush = true;
         transform.position = new Vector3(dino.transform.position.x, egginitialPos.transform.position.y, dino.transform.position.z + zOffset);
        
-        StartCoroutine(EggRotates());
+        //StartCoroutine(EggRotates());
         
        
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (eggHit == false)
         {
@@ -71,13 +72,32 @@ public class Egg : MonoBehaviour
 
     private IEnumerator Pushing(Vector3 localInitialPos)
     {
-        canPush = false;
-        StopCoroutine("EggJiggleMove");
-        jiggling = false;
+        //animator.SetBool("Animate",false);
+        // animator.enabled = false;
+
+        
+
+        if (transform.parent != null)
+        {
+            Rigidbody parentRb = transform.parent.GetComponentInParent<Rigidbody>();
+            Vector3 parentVelocity = Vector3.zero;
+            parentVelocity = parentRb.linearVelocity/3;
+            transform.parent = null;
+            rb.isKinematic = false;
+            rb.linearVelocity = parentVelocity;
+            Debug.Log("Velocity" + parentVelocity);// Use .velocity in older Unity versions
+        }
         transform.parent = null;
         rb.isKinematic = false;
-        rb.linearVelocity = Vector3.zero;
-        rb.AddRelativeForce(0, EggForce, 0, ForceMode.Impulse);
+
+       
+        canPush = false;
+        
+        jiggling = false;
+        
+     
+        
+        rb.AddForce(0, EggForce, 0, ForceMode.Impulse);
         timeToRotate = .1f;
         rb.useGravity = true;
         yield return new WaitForSeconds(0.2f);
@@ -89,7 +109,7 @@ public class Egg : MonoBehaviour
 
        while (transform.position.y >= egginitialPos.transform.position.y)
        {
-            Debug.Log(localInitialPos.y);
+            //Debug.Log(localInitialPos.y);
             yield return null;
        }
         transform.parent = dino.transform;
@@ -99,28 +119,33 @@ public class Egg : MonoBehaviour
         Debug.Log("posicion igual");
         rb.useGravity = false;
         canPush = true;
-       
+        //animator.SetBool("Animate", true);
+       // animator.enabled = true;
+
         yield return null;
     }
 
+    public void EggDeath()
+    {
+        rb.constraints = RigidbodyConstraints.None;
+        eggHit = true;
+        canPush = false;
+        rb.useGravity = true;
+        moduleManager.gameSpeed = 0;
+        moduleManager.speedMultiplier = 0;
+        dino.GetComponent<PlayerController>().UnsetPlayerInput();
+        StopAllCoroutines();
+        //Invoke("TimeScaleWithDelay", 1);
 
+        uiManager.DeathPanelActivation();
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag != "Player")
         {
             if (eggHit == false)
             {
-                rb.constraints = RigidbodyConstraints.None;
-                eggHit = true;
-                canPush = false;
-                rb.useGravity = true;
-                moduleManager.gameSpeed = 0;
-                moduleManager.speedMultiplier = 0;
-                dino.GetComponent<PlayerController>().UnsetPlayerInput();
-                StopAllCoroutines();
-                //Invoke("TimeScaleWithDelay", 1);
-
-                uiManager.DeathPanelActivation();
+                EggDeath();
             }
             
             //Vector3 tempPos = collision.gameObject.GetComponent<PlayerController>().eggInitialPos.transform.localPosition;

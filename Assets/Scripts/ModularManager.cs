@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Scripting;
 
 public class ModuleManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class ModuleManager : MonoBehaviour
     [Header("Movement & Flow")]
     public float gameSpeed = 10f;
     public float speedMultiplier = 0.05f;
+    public float brakingPercentage = 0.5f;
     [SerializeField] private float despawnWorldZ = -15f;
     [SerializeField] private Vector3 moveAxis = Vector3.back; // fixed world-space TRACK translation axis   never changes
     [SerializeField] private float turnDuration = 0.35f;      // seconds to ease a corner pivot
@@ -23,6 +25,7 @@ public class ModuleManager : MonoBehaviour
     private LevelModule lastEnqueued;
     private TrackType lastCurve = TrackType.Straight;
     private bool isTurning = false;
+    [HideInInspector]public bool braking = false;
 
     // The direction the PLAYER is conceptually heading   always opposite the track's translation axis,
     // since the player is stationary and the track scrolls toward them.
@@ -43,7 +46,15 @@ public class ModuleManager : MonoBehaviour
         // Freeze translation while a corner pivot is easing in   see StopRotation/EaseRotation.
         if (!isTurning)
         {
-            transform.position += moveAxis * gameSpeed * Time.deltaTime;
+            if(braking == false)
+            {
+                transform.position += moveAxis * gameSpeed * Time.deltaTime;
+            }
+            else
+            {
+                transform.position += moveAxis * gameSpeed * brakingPercentage * Time.deltaTime;
+            }
+            
         }
     }
 
