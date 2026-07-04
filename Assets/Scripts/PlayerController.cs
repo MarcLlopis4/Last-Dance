@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
             Vector2 Movement = playerInput.actions["Move"].ReadValue<Vector2>();
             float ValueX = Movement.x;
 
+            Debug.Log("ValueX" + ValueX);
             rigidbody.AddRelativeForce(ValueX * SideVelocity, 0, 0, ForceMode.Force);
         }
         
@@ -89,7 +90,7 @@ public class PlayerController : MonoBehaviour
 
                 if (egg.canPush == true)
                 {
-                    Debug.Log("pushedEgg");
+                   
                     egg.PushUp(eggInitialPos.transform.position);
                 }
 

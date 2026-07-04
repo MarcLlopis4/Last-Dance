@@ -157,7 +157,7 @@ public class Egg : MonoBehaviour
                 float zAngle = Mathf.LerpAngle(startPos, originzRot + rotationoffset, duration / timeToRotate);
                 transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, zAngle);
 
-              Debug.Log("siuuuuuu");
+              
               
                
                 yield return null;

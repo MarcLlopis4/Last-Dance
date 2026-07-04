@@ -76,7 +76,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3547295241616895188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3716369215309012022}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 1756761692880097223}
   - component: {fileID: 690705220166741295}
   - component: {fileID: 7985837685047677178}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_RECTA4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6154887500234861995}
   - component: {fileID: 6581164619704499801}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: R_Recta4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4098366857689184785}
   - component: {fileID: 3543477154645588217}
   - component: {fileID: 6884571670531636873}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CURVA_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 2353170161296547428}
   - component: {fileID: 6220471862701479802}
   - component: {fileID: 6778554835253545814}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PASILLO_D1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761394042755591208}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7044c0dbff19ad14581cdfd118b3f9bd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -400,7 +400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2344439644906383456}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,7 +431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8399030045118290239}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -32,6 +32,7 @@ public class LevelModule : MonoBehaviour
         {
             hasTriggered = true;
             mM.StopRotation(this, other.transform.position);
+            other.GetComponent<PlayerController>().CameraTurn();
         }
         if (!hasActivated&&other.CompareTag("Activator"))
         {
