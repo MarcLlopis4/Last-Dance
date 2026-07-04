@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 35775483202184249}
   - component: {fileID: 5521767379892331843}
   - component: {fileID: 2805653999267675763}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CURVA_PINCHOS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 5310444162986691277}
   - component: {fileID: 4918682507291807982}
   - component: {fileID: 8286541799092489944}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PASILLO_D7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 1461564565208179899}
   - component: {fileID: 120908941698824049}
   - component: {fileID: 7534896123757463631}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface634
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9104602829782730583}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 7551347380069458248}
   - component: {fileID: 419986028318712050}
   - component: {fileID: 8853557592464690698}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface638
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 48302750311180121}
   - component: {fileID: 7707187667948025806}
   - component: {fileID: 2413665687517788542}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface666
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 8320587661185150332}
   - component: {fileID: 240571738932494747}
   - component: {fileID: 7245300278729105495}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface668
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -797,7 +797,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3576199962359219664}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

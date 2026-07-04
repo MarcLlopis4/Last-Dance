@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6485935762989817173}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 5101445100895664032}
   - component: {fileID: 3983660047490721542}
   - component: {fileID: 7890607224157457553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface698
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 3632047880534510687}
   - component: {fileID: 4446864449645193141}
   - component: {fileID: 180297493913154854}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_RECTA9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 2210841623547273482}
   - component: {fileID: 4192873782465819879}
   - component: {fileID: 7659113509147458010}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface692
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8480490519558690341}
   - component: {fileID: 3140924633997570763}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RECTA_PINCHO2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2911277161434265419}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

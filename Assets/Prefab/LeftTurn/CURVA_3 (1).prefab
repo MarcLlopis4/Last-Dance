@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1246447695868163429}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 3741691452959879930}
   - component: {fileID: 8808661997167199420}
   - component: {fileID: 6902418034936686653}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CURVA_3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 9099122584189579858}
   - component: {fileID: 3855700057523120377}
   - component: {fileID: 1668085829102793161}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PASILLO_D3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,7 +431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7806963014919001004}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 735638688408092073}
   - component: {fileID: 6491169996617080528}
   - component: {fileID: 3933089359376782681}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PASILLO_D6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 1491560812346511680}
   - component: {fileID: 7863512529631190080}
   - component: {fileID: 3101326725330956425}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface653
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2744374556238587800}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 6105809656521326292}
   - component: {fileID: 6796392485380123954}
   - component: {fileID: 5778734518061373537}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface648
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 1214808796291489167}
   - component: {fileID: 5443163483215539564}
   - component: {fileID: 3236643573152320090}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CURVA_PINCHOS2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 7584787186564996396}
   - component: {fileID: 6616388315155276819}
   - component: {fileID: 7584477177048777911}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface639
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 1571242149500470497}
   - component: {fileID: 2078362418109171684}
   - component: {fileID: 7611821506260787533}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface658
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -797,7 +797,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778325434429571429}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

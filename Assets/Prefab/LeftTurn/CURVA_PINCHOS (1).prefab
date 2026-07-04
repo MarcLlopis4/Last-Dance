@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 130101263595926348}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 6509255283518648082}
   - component: {fileID: 619841317558661592}
   - component: {fileID: 1782261219736874776}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface638
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 7636997892645920393}
   - component: {fileID: 4430113631229074933}
   - component: {fileID: 3601699972442745578}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface668
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 1056088703283618807}
   - component: {fileID: 6633171544019435673}
   - component: {fileID: 4489003774181110595}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface666
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6594115038806805904}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 3373482777567673836}
   - component: {fileID: 538338520664172775}
   - component: {fileID: 3862654558313569425}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CURVA_PINCHOS (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 7193168437109768883}
   - component: {fileID: 4966715995280222161}
   - component: {fileID: 4469706411160657440}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PASILLO_D7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +740,7 @@ GameObject:
   - component: {fileID: 1768141192625741028}
   - component: {fileID: 1284606589373723823}
   - component: {fileID: 6808263103941475951}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface634
   m_TagString: Untagged
   m_Icon: {fileID: 0}
