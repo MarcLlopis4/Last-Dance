@@ -5,6 +5,8 @@ public class Trap : MonoBehaviour
 {
     private enum trapType { spikes, lava, fire, axe, fall}
     [SerializeField] private trapType type;
+    
+
     private void Awake()
     {
 
