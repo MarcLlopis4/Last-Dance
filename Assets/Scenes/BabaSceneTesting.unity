@@ -655,6 +655,10 @@ PrefabInstance:
       propertyPath: m_Interpolate
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2663142054597367441, guid: 138fb701df8d7be4798be6daa9536d0c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3d3fad0afab302b4b8b11115075be931, type: 2}
     - target: {fileID: 2878955803402224121, guid: 138fb701df8d7be4798be6daa9536d0c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2136,13 +2140,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868186611}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17542912, y: -0, z: -0, w: 0.9844921}
+  m_LocalRotation: {x: 0.19012587, y: -0, z: -0, w: 0.9817597}
   m_LocalPosition: {x: 0, y: -0.78, z: -0.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 20.207, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 21.92, y: 0, z: 0}
 --- !u!114 &868186615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,8 +2161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraControll
   Egg: {fileID: 1994539850}
   xoffset: 0
-  yoffset: 1
-  zoffset: 2
+  yoffset: 0.8
+  zoffset: 1.3
   smoothTime: 0.1
   xMaxDistance: 1.85
 --- !u!114 &868186616
