@@ -26,39 +26,46 @@ public class Egg : MonoBehaviour
 
     bool jiggling = true;
 
-    bool eggHit;
+    bool eggHit = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
         canPush = true;
+        transform.parent = dino.transform;
         transform.position = new Vector3(dino.transform.position.x, egginitialPos.transform.position.y, dino.transform.position.z + zOffset);
        
+
         //StartCoroutine(EggRotates());
-        
-       
+
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (eggHit == false)
+       
+        if (setinitialPosY && canPush && eggHit == false)
         {
+           
+           transform.position = new Vector3(dino.transform.position.x, egginitialPos.transform.position.y, dino.transform.position.z + zOffset);
+            Debug.Log("InGround" + transform.position);
+
+        }
+        else if(setinitialPosY == false)
+        {
+            Debug.Log("InAir");
+            transform.position = new Vector3(dino.transform.position.x, transform.position.y, dino.transform.position.z + zOffset);
+        }
+        else
+        {
+
             transform.position = new Vector3(dino.transform.position.x, transform.position.y, dino.transform.position.z + zOffset);
 
-            if (setinitialPosY && canPush)
-            {
-
-                transform.position = new Vector3(dino.transform.position.x, egginitialPos.transform.position.y, dino.transform.position.z + zOffset);
-
-            }
         }
-       
 
-        if (jiggling == true)
-        {
-            //StartCoroutine(EggJiggleMove());
-        }
+
+        
     }
 
     public void PushUp(Vector3 localinitialPos)

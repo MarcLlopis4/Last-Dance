@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public GameObject camClosePos;
     [SerializeField] public CameraControll cam;
     [SerializeField] public ModuleManager mM;
+    [SerializeField] public PhysicsMaterial wallFloorMat;
         
 
     bool canJump =true;
@@ -45,6 +46,15 @@ public class PlayerController : MonoBehaviour
 
             Debug.Log("ValueX" + ValueX);
             rigidbody.AddRelativeForce(ValueX * SideVelocity, 0, 0, ForceMode.Force);
+
+            //if(playerInput.actions["Move"].ReadValue<Vector2>().x != 0)
+            //{
+            //    wallFloorMat.dynamicFriction = 0f;
+            //}
+            //else
+            //{
+            //    wallFloorMat.dynamicFriction = 0.3f;
+            //}
         }
         
 
@@ -134,7 +144,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log(Vector3.Angle(surfaceNormal, Vector3.up));
             canJump = true;
             egg.setinitialPosY = true;
-            egg.transform.parent = null;
+            //egg.transform.parent = this.transform;
         }
     }
 }
