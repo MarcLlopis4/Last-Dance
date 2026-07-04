@@ -354,6 +354,8 @@ GameObject:
   - component: {fileID: 3702130804777784063}
   - component: {fileID: 824852940768672668}
   - component: {fileID: 2974124273893380601}
+  - component: {fileID: 7097202673308715446}
+  - component: {fileID: 5993043107417695887}
   m_Layer: 0
   m_Name: polySurface627
   m_TagString: Untagged
@@ -433,6 +435,40 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7097202673308715446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5205356581530163610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3a251e1b8f77a42b481988bd75b40a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trap
+  type: 1
+--- !u!65 &5993043107417695887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5205356581530163610}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6, y: 3, z: 0.6}
+  m_Center: {x: -0.48778942, y: 1.53, z: -0.4986146}
 --- !u!1 &6234049807336117789
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +561,8 @@ GameObject:
   - component: {fileID: 9141180236654968581}
   - component: {fileID: 7768822571297578807}
   - component: {fileID: 1456821436675142964}
+  - component: {fileID: 4341580233632923456}
+  - component: {fileID: 1884587364057334763}
   m_Layer: 0
   m_Name: polySurface628
   m_TagString: Untagged
@@ -604,6 +642,40 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4341580233632923456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7465200229335634042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3a251e1b8f77a42b481988bd75b40a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trap
+  type: 1
+--- !u!65 &1884587364057334763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7465200229335634042}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6, y: 3, z: 0.6}
+  m_Center: {x: 0.4986134, y: 1.53, z: -0.48779064}
 --- !u!1 &8883180919927396362
 GameObject:
   m_ObjectHideFlags: 0

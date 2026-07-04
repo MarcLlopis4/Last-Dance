@@ -3,7 +3,17 @@ guid: 960be44b0a5baf34188c8021bfa27c03
 ModelImporter:
   serializedVersion: 24501
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5SG
+    second: {fileID: 2100000, guid: bd0f1eb0317e0234a870c6500ddb529f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vias_antorcha_pincho
+    second: {fileID: 2100000, guid: 817c69e5314fe0746bd1e00145284a37, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 5164842951184320607}
   - component: {fileID: 2734525850095934553}
   - component: {fileID: 7655581441017199786}
+  - component: {fileID: 7790393184238521256}
+  - component: {fileID: 3191641106073400638}
+  - component: {fileID: 7785688135259465049}
+  - component: {fileID: 5462658265134870710}
   m_Layer: 7
   m_Name: dragon_pared11
   m_TagString: Untagged
@@ -90,6 +94,82 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7790393184238521256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428477861427716114}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.33006322, y: 1.0087003, z: 0.31356934}
+  m_Center: {x: 1.7400348, y: 0, z: -0.000001952052}
+--- !u!65 &3191641106073400638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428477861427716114}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.35333264, y: 1.0087003, z: 0.31356934}
+  m_Center: {x: -1.8595757, y: 0, z: -0.0000019520517}
+--- !u!65 &7785688135259465049
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428477861427716114}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.9413085, y: 0.14461493, z: 0.20784664}
+  m_Center: {x: -0.06558776, y: 0.15244532, z: 0.008528452}
+--- !u!114 &5462658265134870710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428477861427716114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3a251e1b8f77a42b481988bd75b40a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trap
+  type: 2
 --- !u!1 &2235123914878078584
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +212,7 @@ GameObject:
   - component: {fileID: 4284220770970180422}
   - component: {fileID: 1612660641231457713}
   - component: {fileID: 635429180533479438}
+  - component: {fileID: 3913316861792041582}
   m_Layer: 7
   m_Name: dragon_pared8
   m_TagString: Untagged
@@ -152,7 +233,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4989378629884833508}
+  m_Father: {fileID: 1354488653629540878}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &1612660641231457713
 MeshFilter:
@@ -211,6 +292,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3913316861792041582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355092082369929093}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3135742, y: 1.0087003, z: 0.3319691}
+  m_Center: {x: 0.0000014901161, y: 0, z: -0.073762074}
 --- !u!1 &4874423451268239111
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,8 +344,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8243416788833344304}
-  - {fileID: 4284220770970180422}
+  - {fileID: 1354488653629540878}
   - {fileID: 5164842951184320607}
   - {fileID: 2510777680557209698}
   - {fileID: 6051646940625305711}
@@ -605,6 +706,75 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.85, y: 2.0953853, z: 8.51007}
   m_Center: {x: 6.85, y: 1.041556, z: -3.973037}
+--- !u!1 &5389799035706870546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1354488653629540878}
+  - component: {fileID: 451786257454227257}
+  - component: {fileID: 5894096768949160676}
+  m_Layer: 7
+  m_Name: Dragons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1354488653629540878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5389799035706870546}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8243416788833344304}
+  - {fileID: 4284220770970180422}
+  m_Father: {fileID: 4989378629884833508}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &451786257454227257
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5389799035706870546}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.5101933, y: 0.15953326, z: 0.14832747}
+  m_Center: {x: 0, y: 1.462412, z: 1.9610884}
+--- !u!114 &5894096768949160676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5389799035706870546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3a251e1b8f77a42b481988bd75b40a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trap
+  type: 2
 --- !u!1 &7186087405914502253
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +817,7 @@ GameObject:
   - component: {fileID: 8243416788833344304}
   - component: {fileID: 3497146520978651765}
   - component: {fileID: 3437426308008350046}
+  - component: {fileID: 8087074704178147632}
   m_Layer: 7
   m_Name: dragon_pared7
   m_TagString: Untagged
@@ -667,7 +838,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4989378629884833508}
+  m_Father: {fileID: 1354488653629540878}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &3497146520978651765
 MeshFilter:
@@ -726,3 +897,24 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8087074704178147632
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7210741209896596037}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.31356934, y: 1.0087003, z: 0.31572413}
+  m_Center: {x: -0.0000009536743, y: 0, z: 0.08188477}

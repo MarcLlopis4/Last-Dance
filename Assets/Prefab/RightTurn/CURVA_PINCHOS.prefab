@@ -527,6 +527,8 @@ GameObject:
   - component: {fileID: 7551347380069458248}
   - component: {fileID: 419986028318712050}
   - component: {fileID: 8853557592464690698}
+  - component: {fileID: 8127809881818130167}
+  - component: {fileID: 3069514394889311041}
   m_Layer: 0
   m_Name: polySurface638
   m_TagString: Untagged
@@ -607,6 +609,40 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8127809881818130167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3546584818392789683}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6, y: 0.7, z: 0.6}
+  m_Center: {x: -2.8373106, y: 0.3, z: 18.059856}
+--- !u!114 &3069514394889311041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3546584818392789683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3a251e1b8f77a42b481988bd75b40a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trap
+  type: 0
 --- !u!1 &4907764356579827247
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +744,8 @@ GameObject:
   - component: {fileID: 8320587661185150332}
   - component: {fileID: 240571738932494747}
   - component: {fileID: 7245300278729105495}
+  - component: {fileID: 7373597093462814355}
+  - component: {fileID: 6030391617375153319}
   m_Layer: 0
   m_Name: polySurface668
   m_TagString: Untagged
@@ -788,6 +826,40 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7373597093462814355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6218849176992573728}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6, y: 0.7, z: 0.6}
+  m_Center: {x: -2.8373091, y: 0.3, z: 18.059853}
+--- !u!114 &6030391617375153319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6218849176992573728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3a251e1b8f77a42b481988bd75b40a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trap
+  type: 0
 --- !u!1 &7690641919440564161
 GameObject:
   m_ObjectHideFlags: 0

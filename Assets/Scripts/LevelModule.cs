@@ -1,4 +1,5 @@
 // LevelModule.cs
+using System.Linq;
 using UnityEngine;
 
 public class LevelModule : MonoBehaviour
@@ -13,11 +14,15 @@ public class LevelModule : MonoBehaviour
 
     private float despawnWorldZ;
     private bool hasTriggered;
+    private bool hasActivated;
+    private Trap[] childTraps;
 
     public void Initialize(float despawnPositionZ)
     {
         despawnWorldZ = despawnPositionZ;
         hasTriggered = false;
+        hasActivated = false;
+        childTraps = transform.GetComponentsInChildren<Trap>();
     }
 
     // LevelModule.cs
@@ -27,6 +32,14 @@ public class LevelModule : MonoBehaviour
         {
             hasTriggered = true;
             mM.StopRotation(this, other.transform.position);
+        }
+        if (!hasActivated&&other.CompareTag("Activator"))
+        {
+            hasActivated = true;
+            foreach (var child in childTraps)
+            {
+                child.Setup();
+            }
         }
     }
 
