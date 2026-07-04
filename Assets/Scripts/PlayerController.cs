@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private Egg egg;
     [SerializeField] public GameObject eggInitialPos;
+    [SerializeField] public GameObject camClosePos;
+    [SerializeField] public CameraControll cam;
         
 
     bool canJump =true;
@@ -24,6 +26,11 @@ public class PlayerController : MonoBehaviour
          rigidbody = GetComponent<Rigidbody>();
         //Vector3 initialPos = eggInitialPos.transform.position;
        // egg.transform.position = initialPos;
+    }
+
+    public void CameraTurn()
+    {
+        cam.CameraTurn(camClosePos.transform.position);
     }
 
     // Update is called once per frame

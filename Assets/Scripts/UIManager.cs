@@ -48,6 +48,7 @@ public class UIManager : MonoBehaviour
         }
 
         deathPanel.transform.GetChild(0).gameObject.SetActive(true);
+        deathPanel.transform.GetChild(1).gameObject.SetActive(true);
 
             
         yield return null;
