@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5928301159002954381}
   - component: {fileID: 4316791036202514832}
   - component: {fileID: 2248815245821108651}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface626
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,8 +136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4461734656515426604}
   - component: {fileID: 8976677903795989084}
-  - component: {fileID: 3625333578494446091}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CURVA_LAVA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,33 +179,6 @@ MonoBehaviour:
   endAnchor: {fileID: 8919104706167950329}
   trackType: 2
   mM: {fileID: 0}
---- !u!54 &3625333578494446091
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3542734538837282955}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 2
 --- !u!1 &4395773076596330598
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +200,9 @@ GameObject:
   - component: {fileID: 8543682332487643291}
   - component: {fileID: 5941562484918546719}
   - component: {fileID: 8131296888997053399}
-  m_Layer: 0
+  - component: {fileID: 3876545721626065881}
+  - component: {fileID: 8156549468663321347}
+  m_Layer: 7
   m_Name: PASILLO_D4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,6 +493,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.0953853, z: 8.510071}
   m_Center: {x: 7.13, y: 1.041556, z: -3.9730377}
+--- !u!114 &3876545721626065881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4395773076596330598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f832687575321f94da0ce327bb6a64f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  type: 0
+  mM: {fileID: 0}
+  parentRef: {fileID: 0}
+--- !u!54 &8156549468663321347
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4395773076596330598}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1 &5133831782563895646
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8919104706167950329}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +579,7 @@ GameObject:
   - component: {fileID: 6196053846897677874}
   - component: {fileID: 6251846741382806181}
   - component: {fileID: 2591736572117838899}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface625
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,7 +701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3662038140915496108}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1771735560740542118}
   - component: {fileID: 415305139108682786}
-  - component: {fileID: 3194309241913742373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CURVA_PINCHOS2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,33 +55,6 @@ MonoBehaviour:
   endAnchor: {fileID: 7853837288082695132}
   trackType: 2
   mM: {fileID: 0}
---- !u!54 &3194309241913742373
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 121361167772961097}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 2
 --- !u!1 &183334075778144754
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +66,7 @@ GameObject:
   - component: {fileID: 8772584933805667326}
   - component: {fileID: 9049881920198283617}
   - component: {fileID: 8236564380249689054}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface653
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +156,7 @@ GameObject:
   - component: {fileID: 5126051130801424616}
   - component: {fileID: 1743953758700029846}
   - component: {fileID: 8707823037197328081}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface639
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,7 +248,7 @@ GameObject:
   - component: {fileID: 4351339607193058054}
   - component: {fileID: 1765852966745979076}
   - component: {fileID: 3017274053580056389}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface648
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1070808178090497707}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +406,7 @@ GameObject:
   - component: {fileID: 4430130088914793617}
   - component: {fileID: 5361078350791306825}
   - component: {fileID: 6830770997962286287}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface658
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +541,9 @@ GameObject:
   - component: {fileID: 6172753498788673092}
   - component: {fileID: 8343589385834319747}
   - component: {fileID: 8194947632984532150}
-  m_Layer: 0
+  - component: {fileID: 1474458680881107012}
+  - component: {fileID: 1269666739008399702}
+  m_Layer: 7
   m_Name: PASILLO_D6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -860,6 +834,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.85, y: 2.0953853, z: 8.510071}
   m_Center: {x: 6.85, y: 1.041556, z: -3.973037}
+--- !u!114 &1474458680881107012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8253543059634793087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f832687575321f94da0ce327bb6a64f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  type: 0
+  mM: {fileID: 0}
+  parentRef: {fileID: 0}
+--- !u!54 &1269666739008399702
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8253543059634793087}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1 &8265723612673879946
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,7 +885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7853837288082695132}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

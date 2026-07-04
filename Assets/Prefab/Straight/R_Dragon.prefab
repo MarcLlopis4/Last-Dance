@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3282160687679719955}
   - component: {fileID: 3117724624051629370}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: R_Dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8025441302620979448}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 2619592543422289828}
   - component: {fileID: 6222854413891799841}
   - component: {fileID: 9014497632927357542}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_RECTA13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6219370143079649536}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 7714813598800090282}
   - component: {fileID: 8919538856203697703}
   - component: {fileID: 1378030588332054793}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RECTA_DRAGON
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 5509209382014247385}
   - component: {fileID: 4640466787913096506}
   - component: {fileID: 2885421359524939537}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dragones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 2455362288519290249}
   - component: {fileID: 1928515281360913082}
   - component: {fileID: 3774935822170081119}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: dragon_pared5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 1762329853375933070}
   - component: {fileID: 1325644926321768686}
   - component: {fileID: 8530190951395100962}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: dragon_pared6
   m_TagString: Untagged
   m_Icon: {fileID: 0}

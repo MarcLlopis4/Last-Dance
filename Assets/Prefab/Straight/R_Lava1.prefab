@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4509728168511788682}
   - component: {fileID: 7039683742585570999}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: R_Lava1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 6717716556635003845}
   - component: {fileID: 5478549109429373907}
   - component: {fileID: 9068337303873874870}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RECTA_LAVA1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461537415751703178}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 608283722433464371}
   - component: {fileID: 6120703285646985416}
   - component: {fileID: 2020288938433748151}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_RECTA8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 3535297266196493507}
   - component: {fileID: 1226992979335660598}
   - component: {fileID: 1837011815603887387}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface624
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7480159899479224693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -21,7 +21,9 @@ GameObject:
   - component: {fileID: 735638688408092073}
   - component: {fileID: 6491169996617080528}
   - component: {fileID: 3933089359376782681}
-  m_Layer: 0
+  - component: {fileID: 3482691788147238495}
+  - component: {fileID: 4025260928925309524}
+  m_Layer: 7
   m_Name: PASILLO_D6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,6 +314,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.0953853, z: 8.510071}
   m_Center: {x: 7.13, y: 1.041556, z: -3.973037}
+--- !u!114 &3482691788147238495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616895541466186526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f832687575321f94da0ce327bb6a64f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  type: 0
+  mM: {fileID: 0}
+  parentRef: {fileID: 0}
+--- !u!54 &4025260928925309524
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616895541466186526}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1 &811588691108820282
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +367,7 @@ GameObject:
   - component: {fileID: 1491560812346511680}
   - component: {fileID: 7863512529631190080}
   - component: {fileID: 3101326725330956425}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface653
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2744374556238587800}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +490,7 @@ GameObject:
   - component: {fileID: 5778734518061373537}
   - component: {fileID: 696119424627342034}
   - component: {fileID: 5116216767104071516}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface648
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,8 +614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1214808796291489167}
   - component: {fileID: 5443163483215539564}
-  - component: {fileID: 3236643573152320090}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CURVA_PINCHOS2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,33 +659,6 @@ MonoBehaviour:
   endAnchor: {fileID: 1778325434429571429}
   trackType: 2
   mM: {fileID: 0}
---- !u!54 &3236643573152320090
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2804027503898533469}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 2
 --- !u!1 &3654994972592658583
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +670,7 @@ GameObject:
   - component: {fileID: 7584787186564996396}
   - component: {fileID: 6616388315155276819}
   - component: {fileID: 7584477177048777911}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface639
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +762,7 @@ GameObject:
   - component: {fileID: 7611821506260787533}
   - component: {fileID: 418560176441111650}
   - component: {fileID: 9173616796459229166}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface658
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778325434429571429}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

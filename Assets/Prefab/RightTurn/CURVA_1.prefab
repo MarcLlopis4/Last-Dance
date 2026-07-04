@@ -41,7 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8703637748145156328}
   - component: {fileID: 7944356813511880183}
-  - component: {fileID: 3344039438301631140}
   m_Layer: 7
   m_Name: CURVA_1
   m_TagString: Untagged
@@ -83,33 +82,6 @@ MonoBehaviour:
   endAnchor: {fileID: 2634315666670168745}
   trackType: 2
   mM: {fileID: 0}
---- !u!54 &3344039438301631140
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7111580722470865411}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 2
 --- !u!1 &8856960364677323011
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,6 +103,8 @@ GameObject:
   - component: {fileID: 3976262311264567235}
   - component: {fileID: 4617355380655940321}
   - component: {fileID: 3027155336378611872}
+  - component: {fileID: 2787394286626483965}
+  - component: {fileID: 9202329699080247198}
   m_Layer: 7
   m_Name: PASILLO_D1
   m_TagString: Untagged
@@ -422,6 +396,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.0953853, z: 8.510072}
   m_Center: {x: 7.13, y: 1.041556, z: -3.973038}
+--- !u!114 &2787394286626483965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8856960364677323011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f832687575321f94da0ce327bb6a64f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  type: 0
+  mM: {fileID: 0}
+  parentRef: {fileID: 0}
+--- !u!54 &9202329699080247198
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8856960364677323011}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1 &9043436708498252562
 GameObject:
   m_ObjectHideFlags: 0

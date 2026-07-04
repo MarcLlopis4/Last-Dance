@@ -25,33 +25,6 @@ public class LevelModule : MonoBehaviour
         childTraps = transform.GetComponentsInChildren<Trap>();
     }
 
-    // LevelModule.cs
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!hasTriggered && other.CompareTag("Player"))
-        {
-            if (trackType == TrackType.UpRamp)
-            {
-                
-            }
-            else
-            {
-                hasTriggered = true;
-                mM.StopRotation(this, other.transform.position);
-                other.GetComponent<PlayerController>().CameraTurn();
-            }
-        }
-        if (!hasActivated&&other.CompareTag("Activator"))
-        {
-            hasActivated = true;
-            foreach (var child in childTraps)
-            {
-                child.Setup();
-            }
-        }
-    }
-
-
     private void LateUpdate()
     {
         if (endAnchor.position.z < despawnWorldZ)
@@ -61,6 +34,15 @@ public class LevelModule : MonoBehaviour
                 mM.activeModules.Dequeue();
                 mM.SpawnNextModule();
                 mM.ReturnModuleToPool(this);
+            }
+        }
+
+        if (!hasActivated && spawnAnchor.position.z<6f)
+        {
+            hasActivated = true;
+            foreach (var child in childTraps)
+            {
+                child.Setup();
             }
         }
     }
