@@ -30,9 +30,16 @@ public class LevelModule : MonoBehaviour
     {
         if (!hasTriggered && other.CompareTag("Player"))
         {
-            hasTriggered = true;
-            mM.StopRotation(this, other.transform.position);
-            other.GetComponent<PlayerController>().CameraTurn();
+            if (trackType == TrackType.UpRamp)
+            {
+                
+            }
+            else
+            {
+                hasTriggered = true;
+                mM.StopRotation(this, other.transform.position);
+                other.GetComponent<PlayerController>().CameraTurn();
+            }
         }
         if (!hasActivated&&other.CompareTag("Activator"))
         {

@@ -165,7 +165,7 @@ public class ModuleManager : MonoBehaviour
 
         module.Initialize(despawnWorldZ);
 
-        if (module.trackType != TrackType.Straight)
+        if ((module.trackType != TrackType.Straight) && (module.trackType != TrackType.UpRamp))
         {
             lastCurve = module.trackType;
         }
