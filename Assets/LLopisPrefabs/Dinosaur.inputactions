@@ -32,6 +32,15 @@
                     "processors": "",
                     "interactions": "Hold",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Brake",
+                    "type": "Value",
+                    "id": "98260cd1-301d-4841-b9fc-906136c45349",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone(min=0.82)",
+                    "interactions": "Press(pressPoint=0.8,behavior=2)",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -219,6 +228,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "EggPush",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ee86a351-b30f-4a25-8da9-5958c2af4d48",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "Press(pressPoint=0.8,behavior=2)",
+                    "processors": "AxisDeadzone(min=0.85)",
+                    "groups": "",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f3bc50c-819d-468f-a39e-e8fb2b9994ca",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public GameObject eggInitialPos;
     [SerializeField] public GameObject camClosePos;
     [SerializeField] public CameraControll cam;
+    [SerializeField] public ModuleManager mM;
+    [SerializeField] public PhysicsMaterial wallFloorMat;
         
 
     bool canJump =true;
@@ -40,9 +42,19 @@ public class PlayerController : MonoBehaviour
         {
             Vector2 Movement = playerInput.actions["Move"].ReadValue<Vector2>();
             float ValueX = Movement.x;
+            //float ValueY = Movement.y;
 
             Debug.Log("ValueX" + ValueX);
             rigidbody.AddRelativeForce(ValueX * SideVelocity, 0, 0, ForceMode.Force);
+
+            //if(playerInput.actions["Move"].ReadValue<Vector2>().x != 0)
+            //{
+            //    wallFloorMat.dynamicFriction = 0f;
+            //}
+            //else
+            //{
+            //    wallFloorMat.dynamicFriction = 0.3f;
+            //}
         }
         
 
@@ -54,6 +66,27 @@ public class PlayerController : MonoBehaviour
     public void UnsetPlayerInput()
     {
         playerInput = null;
+    }
+    public void Brake(InputAction.CallbackContext context)
+    {
+        switch (context.phase)
+        {
+            case InputActionPhase.Performed:
+
+                mM.braking = true;
+
+                return;
+
+            case InputActionPhase.Canceled:
+
+
+                mM.braking = false;
+                    
+                return;
+
+
+
+        }
     }
 
     public void Jump(InputAction.CallbackContext context)
@@ -71,7 +104,7 @@ public class PlayerController : MonoBehaviour
                     }
                     //egg.StopJiggling();
                   
-                    rigidbody.AddForce(0, jumpForce, 0, ForceMode.Force);
+                    rigidbody.AddForce(0, jumpForce, 0, ForceMode.VelocityChange);
                 }
                 
 
@@ -111,7 +144,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log(Vector3.Angle(surfaceNormal, Vector3.up));
             canJump = true;
             egg.setinitialPosY = true;
-            egg.transform.parent = null;
+            //egg.transform.parent = this.transform;
         }
     }
 }

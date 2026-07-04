@@ -1,4 +1,5 @@
 // LevelModule.cs
+using System.Linq;
 using UnityEngine;
 
 public class LevelModule : MonoBehaviour
@@ -13,24 +14,16 @@ public class LevelModule : MonoBehaviour
 
     private float despawnWorldZ;
     private bool hasTriggered;
+    private bool hasActivated;
+    private Trap[] childTraps;
 
     public void Initialize(float despawnPositionZ)
     {
         despawnWorldZ = despawnPositionZ;
         hasTriggered = false;
+        hasActivated = false;
+        childTraps = transform.GetComponentsInChildren<Trap>();
     }
-
-    // LevelModule.cs
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!hasTriggered && other.CompareTag("Player"))
-        {
-            hasTriggered = true;
-            mM.StopRotation(this, other.transform.position);
-            other.GetComponent<PlayerController>().CameraTurn();
-        }
-    }
-
 
     private void LateUpdate()
     {
@@ -41,6 +34,15 @@ public class LevelModule : MonoBehaviour
                 mM.activeModules.Dequeue();
                 mM.SpawnNextModule();
                 mM.ReturnModuleToPool(this);
+            }
+        }
+
+        if (!hasActivated && spawnAnchor.position.z<6f)
+        {
+            hasActivated = true;
+            foreach (var child in childTraps)
+            {
+                child.Setup();
             }
         }
     }

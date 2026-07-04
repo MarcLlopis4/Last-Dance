@@ -238,8 +238,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2875236142326671629}
-  - {fileID: 6447890590547910675}
+  - {fileID: 5509209382014247385}
   - {fileID: 2619592543422289828}
   m_Father: {fileID: 3282160687679719955}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -250,7 +249,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6402051765935540218}
-  m_Material: {fileID: 13400000, guid: 7044c0dbff19ad14581cdfd118b3f9bd, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -348,6 +347,75 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.44935513, y: 2.0952687, z: 0.56496155}
   m_Center: {x: 3.9446578, y: 1.0414977, z: -4.02}
+--- !u!1 &6589383640696630048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5509209382014247385}
+  - component: {fileID: 4640466787913096506}
+  - component: {fileID: 2885421359524939537}
+  m_Layer: 7
+  m_Name: Dragones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5509209382014247385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6589383640696630048}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2875236142326671629}
+  - {fileID: 6447890590547910675}
+  m_Father: {fileID: 1701099969700131802}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4640466787913096506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6589383640696630048}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18972158, y: 0.10046637, z: 3.3851826}
+  m_Center: {x: 1.988481, y: 0.7568615, z: -2.0088344}
+--- !u!114 &2885421359524939537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6589383640696630048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3a251e1b8f77a42b481988bd75b40a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trap
+  type: 2
 --- !u!1 &8291027447177512240
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +427,7 @@ GameObject:
   - component: {fileID: 2875236142326671629}
   - component: {fileID: 2455362288519290249}
   - component: {fileID: 1928515281360913082}
+  - component: {fileID: 3774935822170081119}
   m_Layer: 7
   m_Name: dragon_pared5
   m_TagString: Untagged
@@ -374,12 +443,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8291027447177512240}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.003471, y: 0.597037, z: -0.20526272}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.003471, y: 0.597037, z: -0.20526266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1701099969700131802}
+  m_Father: {fileID: 5509209382014247385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2455362288519290249
 MeshFilter:
@@ -438,6 +507,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3774935822170081119
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8291027447177512240}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.31357175, y: 1.0087003, z: 0.33079126}
+  m_Center: {x: -0.00000071525574, y: 0, z: 0.07435073}
 --- !u!1 &8813910244541005629
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +539,7 @@ GameObject:
   - component: {fileID: 6447890590547910675}
   - component: {fileID: 1762329853375933070}
   - component: {fileID: 1325644926321768686}
+  - component: {fileID: 8530190951395100962}
   m_Layer: 7
   m_Name: dragon_pared6
   m_TagString: Untagged
@@ -464,12 +555,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8813910244541005629}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.003471, y: 0.597037, z: -3.7982497}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1701099969700131802}
+  m_Father: {fileID: 5509209382014247385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1762329853375933070
 MeshFilter:
@@ -528,3 +619,24 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8530190951395100962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8813910244541005629}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.31357175, y: 1.0087003, z: 0.3160364}
+  m_Center: {x: -0.00000071525574, y: 0, z: -0.081728905}
