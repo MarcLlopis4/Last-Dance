@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
     {
         switch (context.phase)
         {
-            case InputActionPhase.Started:
+            case InputActionPhase.Performed:
 
                 mM.braking = true;
 
