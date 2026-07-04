@@ -10,6 +10,7 @@ public class Egg : MonoBehaviour
     private CapsuleCollider coll;
     [SerializeField] private Animator animator;
     [SerializeField] private float EggForce;
+    [SerializeField] private float eggCatchmargin;
     public GameObject dino;
 
     [SerializeField] private CameraControll camera;
@@ -30,7 +31,7 @@ public class Egg : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        //Application.targetFrameRate = 120;
         canPush = true;
         transform.parent = dino.transform;
         transform.position = new Vector3(dino.transform.position.x, egginitialPos.transform.position.y, dino.transform.position.z + zOffset);
@@ -60,7 +61,7 @@ public class Egg : MonoBehaviour
         else
         {
 
-            transform.position = new Vector3(dino.transform.position.x, transform.position.y, dino.transform.position.z + zOffset);
+            //transform.position = new Vector3(dino.transform.position.x, transform.position.y, dino.transform.position.z + zOffset);
 
         }
 
@@ -119,13 +120,21 @@ public class Egg : MonoBehaviour
             //Debug.Log(localInitialPos.y);
             yield return null;
        }
-        transform.parent = dino.transform;
-        transform.position = egginitialPos.transform.position;
-        rb.isKinematic = true;
-        timeToRotate = .7f;
-        Debug.Log("posicion igual");
-        rb.useGravity = false;
-        canPush = true;
+
+       if(transform.position.x < egginitialPos.transform.position.x + eggCatchmargin && transform.position.x > egginitialPos.transform.position.x - eggCatchmargin)
+       {
+
+            transform.parent = dino.transform;
+            transform.position = egginitialPos.transform.position;
+            rb.isKinematic = true;
+            timeToRotate = .7f;
+            Debug.Log("posicion igual");
+            rb.useGravity = false;
+            canPush = true;
+
+        }
+
+       
         //animator.SetBool("Animate", true);
        // animator.enabled = true;
 
