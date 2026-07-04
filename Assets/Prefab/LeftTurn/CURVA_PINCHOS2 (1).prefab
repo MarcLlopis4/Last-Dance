@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1771735560740542118}
   - component: {fileID: 415305139108682786}
   - component: {fileID: 3194309241913742373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CURVA_PINCHOS2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8772584933805667326}
   - component: {fileID: 9049881920198283617}
   - component: {fileID: 8236564380249689054}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface653
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 5126051130801424616}
   - component: {fileID: 1743953758700029846}
   - component: {fileID: 8707823037197328081}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface639
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 4351339607193058054}
   - component: {fileID: 1765852966745979076}
   - component: {fileID: 3017274053580056389}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface648
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1070808178090497707}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 4430130088914793617}
   - component: {fileID: 5361078350791306825}
   - component: {fileID: 6830770997962286287}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface658
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 6172753498788673092}
   - component: {fileID: 8343589385834319747}
   - component: {fileID: 8194947632984532150}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PASILLO_D6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7853837288082695132}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

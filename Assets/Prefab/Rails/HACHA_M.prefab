@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6543142503839558473}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HACHA_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 309510162362297655}
   - component: {fileID: 8833631733944600012}
   - component: {fileID: 3656645905063232678}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HACHA
   m_TagString: Untagged
   m_Icon: {fileID: 0}

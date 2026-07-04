@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 8489740343421229074}
   - component: {fileID: 3715605748689925232}
   - component: {fileID: 1663792741099224279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PASILLO_D4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2837798050608770167}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5867076607311802904}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 6222176238091312759}
   - component: {fileID: 4475446462508430409}
   - component: {fileID: 7830666163646187351}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface626
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 3380992125091716993}
   - component: {fileID: 2367728294312842327}
   - component: {fileID: 1702045883741466616}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: polySurface625
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 2076752956842125502}
   - component: {fileID: 293118554456090134}
   - component: {fileID: 3472819041174981437}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CURVA_LAVA (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

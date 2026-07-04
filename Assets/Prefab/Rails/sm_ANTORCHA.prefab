@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6233599995434268629}
   - component: {fileID: 4108158894153720523}
   - component: {fileID: 5273867268271791738}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: sm_ANTORCHA
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3044660616058455887}
   - component: {fileID: 4827247856588627703}
   - component: {fileID: 3036101028088556792}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: lo_rock_mesh_Group12897
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 9137525440623871892}
   - component: {fileID: 3830247186797048468}
   - component: {fileID: 6675526484989694047}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: lo_rock_mesh_Group12899
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 773038203740317337}
   - component: {fileID: 2999936543213509756}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mesh_piedra_ladrillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 5271954092537289909}
   - component: {fileID: 547465277835463220}
   - component: {fileID: 63525235590374592}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: lo_rock_mesh_Group12897
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5180912045758180229}
   - component: {fileID: 5468327164697220859}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mesh_piedra_ladrillo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 5752301943775708775}
   - component: {fileID: 6269662645787849042}
   - component: {fileID: 2504148632872441512}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: lo_rock_mesh_Group12899
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 5050438377367104468}
   - component: {fileID: 8336391909744775675}
   - component: {fileID: 7509261186601729626}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: lo_rock_mesh_Group12898
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 6538687668974747401}
   - component: {fileID: 7849884283530633542}
   - component: {fileID: 9041466848223369632}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: lo_rock_mesh_Group12898
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -661,7 +661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8057753895953221993}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}

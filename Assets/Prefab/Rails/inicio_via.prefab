@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1447255009362943333}
   - component: {fileID: 8502853130471619103}
   - component: {fileID: 8813235546556910993}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: suelo_ladrillo17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 5762067469914332029}
   - component: {fileID: 5525908297552503565}
   - component: {fileID: 5314349441675341535}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: inicio_via
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 2300808385734022449}
   - component: {fileID: 8749232686783696686}
   - component: {fileID: 2239347213482041251}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MONORAIL_RECTA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
