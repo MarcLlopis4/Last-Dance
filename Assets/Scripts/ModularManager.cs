@@ -18,6 +18,8 @@ public class ModuleManager : MonoBehaviour
     [SerializeField] private float despawnWorldZ = -15f;
     [SerializeField] private Vector3 moveAxis = Vector3.back; // fixed world-space TRACK translation axis   never changes
     [SerializeField] private float turnDuration = 0.35f;      // seconds to ease a corner pivot
+    [SerializeField] public int distance;    // seconds to ease a corner pivot
+    [SerializeField] public LevelManager lM;    // seconds to ease a corner pivot
 
     public Queue<LevelModule> activeModules = new Queue<LevelModule>();
     private Dictionary<GameObject, Queue<LevelModule>> pools = new Dictionary<GameObject, Queue<LevelModule>>();
@@ -188,6 +190,7 @@ public class ModuleManager : MonoBehaviour
         }
 
         LevelModule module = GetModuleFromPool(selectedConfig.prefab);
+        module.dificultyRating = selectedConfig.difficultyRating;
         module.trackType = selectedConfig.trackType;
 
         if (lastEnqueued != null)
