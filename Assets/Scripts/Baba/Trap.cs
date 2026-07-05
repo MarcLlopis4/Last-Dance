@@ -27,7 +27,10 @@ public class Trap : MonoBehaviour
                 DisableCollider(egg.GetComponent<Collider>());
                 if (egg.dino != null)
                 {
-                    DisableCollider(egg.dino.GetComponent<Collider>());
+                    foreach(Collider coll in egg.dino.GetComponents<Collider>())
+                    {
+                        DisableCollider(coll);
+                    }
                 }
                 egg.EggDeath();
                 break;
@@ -64,7 +67,10 @@ public class Trap : MonoBehaviour
         switch (type)
         {
             default:
-                GetComponent<VisualEffect>().Play();
+                foreach(Transform child in transform)
+                {
+                    child.gameObject.SetActive(true);
+                }
                 break;
         }
     }

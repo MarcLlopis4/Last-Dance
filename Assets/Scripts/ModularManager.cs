@@ -25,7 +25,8 @@ public class ModuleManager : MonoBehaviour
 
     private LevelModule lastEnqueued;
     private TrackType lastCurve = TrackType.Straight;
-    private bool isTurning = false;
+    public bool isTurning = false;
+    private bool beginning = false;
     [HideInInspector]public bool braking = false;
     [HideInInspector]public bool rolling = false;
 
@@ -35,9 +36,14 @@ public class ModuleManager : MonoBehaviour
 
     private void Start()
     {
+        beginning = true;
         for (int i = 0; i < initialModulesOnScreen; i++)
         {
             SpawnNextModule();
+            if (i == Mathf.RoundToInt(initialModulesOnScreen / 2f) && beginning)
+            {
+                beginning = false;
+            }
         }
     }
 
@@ -172,6 +178,11 @@ public class ModuleManager : MonoBehaviour
         ModuleConfig selectedConfig = GetRandomModuleConfig();
 
         if (selectedConfig.trackType != TrackType.Straight && selectedConfig.trackType == lastCurve)
+        {
+            selectedConfig = availableModules[0];
+        }
+
+        if (beginning)
         {
             selectedConfig = availableModules[0];
         }

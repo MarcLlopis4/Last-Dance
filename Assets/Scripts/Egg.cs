@@ -223,13 +223,23 @@ public class Egg : MonoBehaviour
         eggHit = true;
         canPush = false;
         rb.useGravity = true;
-        moduleManager.gameSpeed = 0;
         moduleManager.speedMultiplier = 0;
         playerController.UnsetPlayerInput();
         StopAllCoroutines();
         //Invoke("TimeScaleWithDelay", 1);
-
+        StartCoroutine(StopTime());
         uiManager.DeathPanelActivation();
+    }
+    IEnumerator StopTime()
+    {
+        while (moduleManager.gameSpeed > 0)
+        {
+
+            moduleManager.gameSpeed -=0.01f*Time.deltaTime;
+        }
+
+        moduleManager.gameSpeed = 0;
+        yield return null;
     }
     private void OnCollisionEnter(Collision collision)
     {
