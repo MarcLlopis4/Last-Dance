@@ -331,6 +331,7 @@ GameObject:
   - component: {fileID: 3535297266196493507}
   - component: {fileID: 1226992979335660598}
   - component: {fileID: 1837011815603887387}
+  - component: {fileID: 448504328579285075}
   m_Layer: 7
   m_Name: polySurface624
   m_TagString: Untagged
@@ -445,6 +446,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6, y: 3, z: 0.6}
   m_Center: {x: 0.49861327, y: 1.5, z: -0.48860705}
+--- !u!54 &448504328579285075
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176885331182451360}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1 &8869605709425319970
 GameObject:
   m_ObjectHideFlags: 0

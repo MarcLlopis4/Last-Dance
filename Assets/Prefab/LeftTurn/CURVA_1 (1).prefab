@@ -385,7 +385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   type: 0
   mM: {fileID: 0}
-  parentRef: {fileID: 0}
+  parentRef: {fileID: 3543477154645588217}
 --- !u!54 &5988876407121314002
 Rigidbody:
   m_ObjectHideFlags: 0

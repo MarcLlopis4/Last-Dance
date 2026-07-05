@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 1567727315240769802}
   - component: {fileID: 4688784455821448614}
   - component: {fileID: 6140701444889208521}
+  - component: {fileID: 1350825635212270512}
   m_Layer: 7
   m_Name: Trap
   m_TagString: Untagged
@@ -543,6 +544,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5213077, y: 1, z: 0.6716168}
   m_Center: {x: -0.23934615, y: 0, z: -0.006543517}
+--- !u!54 &1350825635212270512
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384169931543200942}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1001 &1618403274766623960
 PrefabInstance:
   m_ObjectHideFlags: 0

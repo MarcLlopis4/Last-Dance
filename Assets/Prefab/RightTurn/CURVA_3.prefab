@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3922105292091137983}
   - component: {fileID: 925199264821048241}
   - component: {fileID: 1178603124633202847}
+  - component: {fileID: 7981391046537581409}
   m_Layer: 7
   m_Name: Trap (1)
   m_TagString: Untagged
@@ -67,6 +68,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3899696, y: 1, z: 1}
   m_Center: {x: -0.3050152, y: 0, z: 0}
+--- !u!54 &7981391046537581409
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4337619493632034282}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1 &4582502046552216066
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +522,7 @@ GameObject:
   - component: {fileID: 5785093583080286977}
   - component: {fileID: 6814848153007551203}
   - component: {fileID: 5250328164257251292}
+  - component: {fileID: 2459864596559704406}
   m_Layer: 7
   m_Name: Trap
   m_TagString: Untagged
@@ -550,6 +579,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3899696, y: 1, z: 1}
   m_Center: {x: -0.3050152, y: 0, z: 0}
+--- !u!54 &2459864596559704406
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782811418486516491}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1 &5846225155289220666
 GameObject:
   m_ObjectHideFlags: 0

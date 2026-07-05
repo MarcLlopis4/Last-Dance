@@ -115,7 +115,7 @@ Material:
     - _WPO: -0.03
     m_Colors:
     - _Color: {r: 1, g: 0.5176471, b: 0.19215688, a: 1}
-    - _MainTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _MainTiling: {r: 10, g: 10, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &4867329453109587596

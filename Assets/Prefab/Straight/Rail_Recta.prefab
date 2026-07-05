@@ -274,7 +274,7 @@ Rigidbody:
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 247
@@ -324,6 +324,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1066050060190006122}
     m_Modifications:
+    - target: {fileID: 309510162362297655, guid: ef6b7085f47801a479b83a2fa7b06553, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 3841500405283368100, guid: ef6b7085f47801a479b83a2fa7b06553, type: 3}
       propertyPath: m_Name
       value: HACHA_M

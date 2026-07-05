@@ -54,6 +54,7 @@ public class Trap : MonoBehaviour
     // disabled) or the dino's collider directly (walking mode).
     private Egg ResolveEgg(Collider other)
     {
+        Debug.Log(other.name);
         Egg egg = other.GetComponent<Egg>();
         if (egg != null) return egg;
 
