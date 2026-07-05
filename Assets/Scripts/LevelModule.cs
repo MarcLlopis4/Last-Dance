@@ -10,6 +10,7 @@ public class LevelModule : MonoBehaviour
     public Transform EndAnchor { get => endAnchor; set => endAnchor = value; }
 
     public TrackType trackType;
+    public int dificultyRating;
     public ModuleManager mM;
 
     private float despawnWorldZ;
@@ -33,6 +34,8 @@ public class LevelModule : MonoBehaviour
             {
                 mM.activeModules.Dequeue();
                 mM.SpawnNextModule();
+                mM.distance += 1 + dificultyRating;
+                mM.lM.UpdateDistance();
                 mM.ReturnModuleToPool(this);
             }
         }

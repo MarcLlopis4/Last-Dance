@@ -1,6 +1,8 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
@@ -16,6 +18,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Slider sfxS;
     [SerializeField] private GameObject optionsPanel;
     [SerializeField] public GameObject pausePanel;
+    [SerializeField] public TextMeshProUGUI distance;
    
 
     void Start()
@@ -30,6 +33,11 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void UpdateDistance()
+    {
+        distance.text = mManager.distance.ToString() + " M";
     }
 
     public void GameplayActivation()
@@ -93,6 +101,11 @@ public class LevelManager : MonoBehaviour
     {
         Time.timeScale = 1;
         pausePanel.SetActive(false);
+    }
+
+    public void ReturnMainMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void SetMusicVolume(Slider slider)
     {
