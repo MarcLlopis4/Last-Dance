@@ -1583,7 +1583,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"e2494f2f35a51fb4588460c1bfd3a982","type":3}}'
     m_Space: -1
   m_Property:
     name: _Diffusse
@@ -1617,7 +1617,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"ab8701b42d089ab4bad9923f5e8848fc","type":3}}'
     m_Space: -1
   m_Property:
     name: _Normal
@@ -1651,7 +1651,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"3643b6b42da05154d95bc57c09d81112","type":3}}'
     m_Space: -1
   m_Property:
     name: _Metallic
@@ -2741,7 +2741,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Plane, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"position":{"x":0.0,"y":-0.6100000143051148,"z":0.0},"normal":{"x":0.0,"y":1.0,"z":0.0}}'
+      m_SerializableObject: '{"position":{"x":0.0,"y":0.15000000596046449,"z":0.0},"normal":{"x":0.0,"y":1.0,"z":0.0}}'
     m_Space: 1
   m_Property:
     name: Plane
@@ -10482,7 +10482,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 1153.4501, y: 2513.9001}
+  m_UIPosition: {x: 1054, y: 2423}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
