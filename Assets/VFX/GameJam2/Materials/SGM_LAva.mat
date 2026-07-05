@@ -112,10 +112,10 @@ Material:
     - _QueueOffset: 0
     - _Rock: 1.9
     - _RocksInt: 13.59
-    - _WPO: 0.12
+    - _WPO: -0.03
     m_Colors:
     - _Color: {r: 1, g: 0.5176471, b: 0.19215688, a: 1}
-    - _MainTiling: {r: 1.44, g: 0.79, b: 0, a: 0}
+    - _MainTiling: {r: 3, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &4867329453109587596
