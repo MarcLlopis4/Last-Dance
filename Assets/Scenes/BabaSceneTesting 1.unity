@@ -2880,7 +2880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1444389571}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1302936046
@@ -3477,6 +3477,7 @@ MonoBehaviour:
   despawnWorldZ: -15
   moveAxis: {x: 0, y: 0, z: -1}
   turnDuration: 0.35
+  isTurning: 0
   braking: 0
   rolling: 0
 --- !u!1 &1916889519 stripped
