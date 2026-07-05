@@ -54,7 +54,7 @@ MonoBehaviour:
     x: -521
     y: 32
     width: 2325
-    height: 2631
+    height: 2671
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1774,8 +1774,8 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.OrientedBox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"center":{"x":0.0,"y":4.960000038146973,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"size":{"x":0.699999988079071,"y":0.699999988079071,"z":0.699999988079071}}'
-    m_Space: 1
+      m_SerializableObject: '{"center":{"x":0.0,"y":4.960000038146973,"z":-3.0199999809265138},"angles":{"x":0.0,"y":0.0,"z":0.0},"size":{"x":0.699999988079071,"y":0.699999988079071,"z":0.699999988079071}}'
+    m_Space: 0
   m_Property:
     name: Box
     m_serializedType:
@@ -1851,8 +1851,7 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots:
-  - {fileID: 8926484042661615020}
+  m_LinkedSlots: []
 --- !u!114 &8926484042661615003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1918,8 +1917,7 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots:
-  - {fileID: 8926484042661615027}
+  m_LinkedSlots: []
 --- !u!114 &8926484042661615005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2340,7 +2338,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: -5
+      m_SerializableObject: -1.5
     m_Space: -1
   m_Property:
     name: Min
@@ -2374,7 +2372,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 5
+      m_SerializableObject: 1.5
     m_Space: -1
   m_Property:
     name: Max
@@ -2416,9 +2414,7 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 1
-  m_LinkedSlots:
-  - {fileID: 8926484042661615002}
-  - {fileID: 8926484042661615211}
+  m_LinkedSlots: []
 --- !u!114 &8926484042661615023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2549,9 +2545,7 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 1
-  m_LinkedSlots:
-  - {fileID: 8926484042661615004}
-  - {fileID: 8926484042661615213}
+  m_LinkedSlots: []
 --- !u!114 &8926484042661615028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7173,7 +7167,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.OrientedBox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"center":{"x":0.0,"y":4.960000038146973,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":0.0},"size":{"x":0.699999988079071,"y":0.699999988079071,"z":0.699999988079071}}'
-    m_Space: 1
+    m_Space: 0
   m_Property:
     name: Box
     m_serializedType:
@@ -7249,8 +7243,7 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots:
-  - {fileID: 8926484042661615020}
+  m_LinkedSlots: []
 --- !u!114 &8926484042661615212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7316,8 +7309,7 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots:
-  - {fileID: 8926484042661615027}
+  m_LinkedSlots: []
 --- !u!114 &8926484042661615214
 MonoBehaviour:
   m_ObjectHideFlags: 0
