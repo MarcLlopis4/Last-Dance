@@ -47,6 +47,7 @@ public class LevelManager : MonoBehaviour
         mManager.enabled = true;
         dino.SetActive(true);
         egg.SetActive(true);
+        distance.transform.parent.gameObject.SetActive(true);
         AudioManager.audioInstance.PlayMusic("Music1");
        
     }

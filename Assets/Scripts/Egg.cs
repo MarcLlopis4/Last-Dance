@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.VFX;
 
 public class Egg : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Egg : MonoBehaviour
     [SerializeField] private CameraControll camera;
     [SerializeField] private ModuleManager moduleManager;
     [SerializeField] private UIManager uiManager;
+    [SerializeField] private GameObject eggExplosion;
 
     public bool canPush;
     public float zOffset;
@@ -219,13 +221,19 @@ public class Egg : MonoBehaviour
 
     public void EggDeath()
     {
-        AudioManager.audioInstance.PlaySFX("EggHit", transform.position);
-        rb.constraints = RigidbodyConstraints.None;
         eggHit = true;
+        //AudioManager.audioInstance.PlaySFX("EggHit", transform.position);
+        transform.GetChild(0).gameObject.SetActive(false);
+        dino.GetComponent<PlayerController>().dragonAnim.enabled = false;
+        eggExplosion.SetActive(true);
+        rb.constraints = RigidbodyConstraints.None;
+        
         canPush = false;
         rb.useGravity = true;
         moduleManager.speedMultiplier = 0;
         playerController.UnsetPlayerInput();
+        
+        playerController.dragonAnim.enabled = false;
         StopAllCoroutines();
         //Invoke("TimeScaleWithDelay", 1);
         StartCoroutine(StopTime());

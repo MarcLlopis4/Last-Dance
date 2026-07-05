@@ -112,7 +112,7 @@ Material:
     - _QueueOffset: 0
     - _Rock: 1.9
     - _RocksInt: 13.59
-    - _WPO: -0.03
+    - _WPO: -0.17
     m_Colors:
     - _Color: {r: 1, g: 0.5176471, b: 0.19215688, a: 1}
     - _MainTiling: {r: 10, g: 10, b: 0, a: 0}

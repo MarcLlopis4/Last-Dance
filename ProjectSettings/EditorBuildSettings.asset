@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BabaSceneTesting.unity
-    guid: f65d5d4590cc2b244a760f199431605a
+    path: Assets/VFX/GameJam2/VFXGraph/Ivan.unity
+    guid: 553d82b45c79e1c44940c2a60e70150e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

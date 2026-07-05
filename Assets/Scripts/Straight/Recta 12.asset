@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ModuleConfig
   prefab: {fileID: 4231694876153716978, guid: 265a6fe67669c3a49a81dfd10b8a8cb3, type: 3}
   trackType: 3
-  spawnWeight: 5
-  difficultyRating: 1
+  spawnWeight: 10
+  difficultyRating: 50

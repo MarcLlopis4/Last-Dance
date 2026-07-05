@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform dragonRigTrans;
     [SerializeField] private Transform rollingRef;
     [SerializeField] private Animator eggAnimator;
-    [SerializeField] private Animator dragonAnim;
+    [SerializeField] public Animator dragonAnim;
     [SerializeField] private float rollAnimTransSpeed;
     [SerializeField] private float SideVelocity;
     [SerializeField] private float jumpForce;
@@ -181,7 +181,10 @@ public class PlayerController : MonoBehaviour
 
     public void UnsetPlayerInput()
     {
+
+        jumpForce = 0;
         playerInput = null;
+        this.enabled = false;
     }
     public void Brake(InputAction.CallbackContext context)
     {

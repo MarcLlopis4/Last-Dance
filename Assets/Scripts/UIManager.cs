@@ -46,7 +46,8 @@ public class UIManager : MonoBehaviour
 
 
         }
-        AudioManager.audioInstance.PlaySFX("DrakeMuelte", transform.position);
+        //AudioManager.audioInstance.PlaySFX("DrakeMuelte", transform.position);
+
         deathPanel.transform.GetChild(0).gameObject.SetActive(true);
         deathPanel.transform.GetChild(1).gameObject.SetActive(true);
 
