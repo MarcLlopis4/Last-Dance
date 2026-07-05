@@ -219,6 +219,7 @@ public class Egg : MonoBehaviour
 
     public void EggDeath()
     {
+        AudioManager.audioInstance.PlaySFX("EggHit", transform.position);
         rb.constraints = RigidbodyConstraints.None;
         eggHit = true;
         canPush = false;

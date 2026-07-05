@@ -66,6 +66,52 @@ public class Trap : MonoBehaviour
     {
         switch (type)
         {
+            case trapType.axe:
+
+                foreach (Transform child in transform)
+                {
+                    child.gameObject.SetActive(true);
+                }
+
+                break;
+
+            case trapType.spikes:
+
+                foreach (Transform child in transform)
+                {
+                    AudioManager.audioInstance.PlaySFX("Spikes", transform.position);
+                    child.gameObject.SetActive(true);
+                }
+
+                break;
+            case trapType.fall:
+
+                foreach (Transform child in transform)
+                {
+                    child.gameObject.SetActive(true);
+                }
+
+                break;
+            case trapType.fire:
+
+                foreach (Transform child in transform)
+                {
+                    AudioManager.audioInstance.PlaySFX("Fuego", transform.position);
+
+                    child.gameObject.SetActive(true);
+
+                }
+
+                break;
+            case trapType.lava:
+
+                foreach (Transform child in transform)
+                {
+                    AudioManager.audioInstance.PlaySFX("Lava", transform.position);
+                    child.gameObject.SetActive(true);
+                }
+
+                break;
             default:
                 foreach(Transform child in transform)
                 {

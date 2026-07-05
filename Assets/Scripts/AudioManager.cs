@@ -80,7 +80,7 @@ public class AudioManager : MonoBehaviour
             }
             else
             {
-                sfxsource.volume = 1f;
+                //sfxsource.volume = 1f;
             }
 
 

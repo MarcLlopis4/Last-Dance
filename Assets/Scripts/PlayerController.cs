@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float rollAnimTransSpeed;
     [SerializeField] private float SideVelocity;
     [SerializeField] private float jumpForce;
+    [SerializeField] private LevelManager lM;
     public Egg egg;
     [SerializeField] public GameObject eggInitialPos;
     [SerializeField] public GameObject camClosePos;
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerInput = GetComponent<PlayerInput>();
+
         rigidbody = GetComponent<Rigidbody>();
         //Vector3 initialPos = eggInitialPos.transform.position;
         //egg.transform.position = initialPos;
@@ -221,6 +223,8 @@ public class PlayerController : MonoBehaviour
                     //egg.StopJiggling();
 
                     rigidbody.AddForce(0, jumpForce, 0, ForceMode.VelocityChange);
+
+                    AudioManager.audioInstance.PlaySFX("Jump", transform.position);
                 }
 
 
@@ -242,7 +246,26 @@ public class PlayerController : MonoBehaviour
                 {
 
                     egg.PushUp(eggInitialPos.transform.position);
+                    AudioManager.audioInstance.PlaySFX("LanzarHuevo", transform.position);
                 }
+
+
+                return;
+
+
+
+        }
+    }
+
+    public void Pause(InputAction.CallbackContext context)
+    {
+        
+        switch (context.phase)
+        {
+            case InputActionPhase.Started:
+
+                Time.timeScale = 0;
+                lM.OpenPanel(lM.pausePanel);
 
 
                 return;
