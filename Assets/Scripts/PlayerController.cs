@@ -152,7 +152,7 @@ public class PlayerController : MonoBehaviour
             Vector2 Movement = playerInput.actions["Move"].ReadValue<Vector2>();
             float ValueX = Movement.x;
             //float ValueY = Movement.y;
-
+            if (mM.isTurning) ValueX = 0;
             Debug.Log("ValueX" + ValueX);
             if (!rolling)
             {

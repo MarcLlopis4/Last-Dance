@@ -37,7 +37,7 @@ public class LevelModule : MonoBehaviour
             }
         }
 
-        if (!hasActivated && spawnAnchor.position.z<6f)
+        if (!hasActivated && spawnAnchor.position.magnitude<14f)
         {
             hasActivated = true;
             foreach (var child in childTraps)
