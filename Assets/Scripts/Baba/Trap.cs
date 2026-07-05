@@ -3,9 +3,9 @@ using UnityEngine.VFX;
 
 public class Trap : MonoBehaviour
 {
-    private enum trapType { spikes, lava, fire, axe, fall}
+    private enum trapType { spikes, lava, fire, axe, fall }
     [SerializeField] private trapType type;
-    
+
 
     private void Awake()
     {
@@ -14,27 +14,51 @@ public class Trap : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Egg>())
+        Egg egg = ResolveEgg(other);
+        if (egg == null) return;
+        switch (type)
         {
-            switch (type)
-            {
-                case trapType.fall:
-                    other.GetComponent<Collider>().enabled = false;
-                    other.GetComponent<Egg>().dino.GetComponent<Collider>().enabled = false;
-                    break;
+            case trapType.fall:
+                DisableCollider(egg.GetComponent<Collider>());
+                if (egg.dino != null)
+                {
+                    DisableCollider(egg.dino.GetComponent<Collider>());
+                }
+                egg.EggDeath();
+                break;
+            case trapType.axe:
+                egg.EggDeath();
+                break;
 
             default:
-                    break;
-            }
+                egg.EggDeath();
+                break;
         }
-        
     }
 
+    private static void DisableCollider(Collider collider)
+    {
+        if (collider != null) collider.enabled = false;
+    }
+
+    // Works whether it's the Egg's own collider that hit the trap (rolling
+    // mode - see PlayerController.ChangeMode, where the dino's collider is
+    // disabled) or the dino's collider directly (walking mode).
+    private Egg ResolveEgg(Collider other)
+    {
+        Egg egg = other.GetComponent<Egg>();
+        if (egg != null) return egg;
+
+        PlayerController player = other.GetComponent<PlayerController>();
+        if (player != null) return player.egg;
+
+        return null;
+    }
     public void Setup()
     {
         switch (type)
@@ -47,6 +71,6 @@ public class Trap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
